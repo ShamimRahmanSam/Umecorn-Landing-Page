@@ -13,25 +13,33 @@
 <body class="bg-white text-black">
 
     <!-- Navbar -->
-    <header class="flex justify-between items-center p-4 bg-blue-600">
-        <div class="flex items-center space-x-4">
-            <img src="/assets/Logo-Generic.svg" alt="Logo" class="h-10">
-        </div>
-        <nav class="hidden md:flex space-x-8">
-            <a href="#" class="hover:text-gray-200">Home</a>
-            <a href="#" class="hover:text-gray-200">Cases</a>
-            <a href="#" class="hover:text-gray-200">Team</a>
-            <a href="#" class="hover:text-gray-200">Contact us</a>
-        </nav>
-        <a href="#" class="hidden md:block bg-white text-blue-600 py-2 px-4 rounded-full">Get Started</a>
-        <button id="burger" class="md:hidden focus:outline-none">
-            <img src="/assets/Frame 6540.png" alt="Burger Menu" class="h-10 w-10">
-        </button>
-    </header>
+    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 p-4 bg-transparent text-white transition-all duration-300">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="/assets/Logo-Generic.svg" alt="Logo" class="h-10">
+            </div>
+            <nav class="hidden lg:flex space-x-8">
+                <a href="#" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">Cases</a>
+                <a href="#" class="hover:text-gray-200">Team</a>
+                <a href="#" class="hover:text-gray-200">Contact us</a>
+            </nav>
+            <div class="flex justify-between items-center">
+            <a href="#" class="hidden md:block bg-white font-bold text-[14px] text-[#2F45FF] py-3 px-4 rounded-lg mr-4">Get Started</a>
 
+            <!-- Burger Button (Visible on Mobile and MD, Hidden on LG and above) -->
+            <div class="flex items-center bg-[#2F45FF] rounded-lg p-2 md:block lg:hidden ">
+                <button id="burger" class="focus:outline-none">
+                    <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-5">
+                </button>
+            </div>
+            </div>
+        </div>
+    </header>
+    
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-blue-600 p-4">
-        <nav class="flex flex-col space-y-4">
+    <div id="mobileMenu" class="hidden lg:hidden bg-blue-600 p-4">
+        <nav class="flex flex-col space-y-4 text-white">
             <a href="#" class="hover:text-gray-200">Home</a>
             <a href="#" class="hover:text-gray-200">Cases</a>
             <a href="#" class="hover:text-gray-200">Team</a>
@@ -40,147 +48,137 @@
         </nav>
         <button id="closeMenu" class="mt-4 text-white">Close</button>
     </div>
-
+    
     <!-- Hero Section -->
-    <section class="text-center bg-gradient-to-b from-blue-600 to-blue-500 text-white">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 p-4">Perception into Science</h1>
-        <p class="max-w-xl mx-auto text-lg md:text-xl mb-8 p-4">Umecorn is a Research and Development Company in the Psychometrics space. Umecorn provides a highly sophisticated social referencing tool that allows third parties to score peoples core character traits and behavioural propensities. Umecorn goes way beyond self-perception tools and leverages the knowledge and assessments of others.</p>
+    <section style="background: linear-gradient(180deg, #5676FF 0%, #1F3699 96.77%);" class="text-center text-white pt-24">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 p-4">Perception into Science</h1>
+        <p class="max-w-xl mx-auto text-lg md:text-xl mb-8 p-4">Umecorn is a Research and Development Company in the Psychometrics space. Umecorn provides a highly sophisticated social referencing tool that allows third parties to score people's core character traits and behavioral propensities. Umecorn goes way beyond self-perception tools and leverages the knowledge and assessments of others.</p>
         <div class="relative">
             <img src="/assets/07_HR-Dashboard-Openings-Applicant Profile New 1.png" 
                  alt="Devices" 
                  class="mx-auto w-[296px] h-[159px] md:w-1/2 md:h-auto object-contain">
         </div>
     </section>
-
-    <!--       
-    <div class="relative">
-        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1200 120"
-                preserveAspectRatio="none"
-                class="w-full h-auto"
-            >
-                <path
-                    d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-                    class="fill-current text-white"
-                ></path>
-            </svg>
-        </div>
-    </div>-->
-
+    
    
     <!-- ABOUT -->
-    <section class="mt-16 text-center h-[560px] p-[var(--xxl)_var(--md)] bg-white text-black border-b border-gray-300 opacity-1 mx-auto">
-        <h1 class="text-2xl font-bold mb-4">
-            Revolutionising Global Understanding through Data
-        </h1>
-        <p class="text-base leading-[1.4rem] mx-4">
-            The Umecom Platform has been developed by industry experts and leaders in the field of Big Data, AI, and Gen AI to unlock totally unique tools that are revolutionising the way we understand people across various Use Cases. Umecom wants to encourage individuals and organisations globally to use our platform. The more data we see, the better our tools become, and the more we can help people access better products. As such, Umecom offers all individual users an incentive to sign up with us exclusively for the purpose of generating a Social Score. To learn more, please read Umecom Incentive.
-        </p>
-    </section>
+<section class="py-16 text-center h-auto p-8 bg-white text-black border-b border-gray-300 mx-auto">
+    <h1 class="text-2xl md:text-4xl font-bold mb-4">
+        Revolutionising Global Understanding through Data
+    </h1>
+    <p class="text-base md:text-lg leading-relaxed mx-auto max-w-4xl">
+        The Umecom Platform has been developed by industry experts and leaders in the field of Big Data, AI, and Gen AI to unlock totally unique tools that are revolutionising the way we understand people across various Use Cases. Umecom wants to encourage individuals and organisations globally to use our platform. The more data we see, the better our tools become, and the more we can help people access better products. As such, Umecom offers all individual users an incentive to sign up with us exclusively for the purpose of generating a Social Score. To learn more, please read Umecom Incentive.
+    </p>
+</section>
 
-    <!-- Use Cases Section -->
-    <section id="use-cases" class="py-12 bg-gray-100 text-gray-900">
-        <h2 class="text-2xl md:text-4xl font-bold text-center mb-8">
-            The Umecom platform has a number of key use cases
-        </h2>
-        <div class="use-case-grid grid grid-cols-1 gap-6 px-4 md:px-12 lg:grid-cols-2 xl:grid-cols-3">
-            <div class="use-case bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="/assets/Colored Icon 1.svg" alt="Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Recruitment</h3>
-                <p class="text-gray-700">Umecom offers Employers and Recruiters new ways of understanding applicants. The recruitment process needs to ensure cultural fit and character matching for specific roles.</p>
-            </div>
-            <div class="use-case bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="/assets/Colored Icon 2.svg" alt="Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Employers</h3>
-                <p class="text-gray-700">Umecom allows employers to unlock the true dynamics happening in the workplace. All anonymised referrals and the unique scoring tools allow employers to see blind spots and other issues that may otherwise go unseen.</p>
-            </div>
-            <div class="use-case bg-white p-6 rounded-lg shadow-lg text-center">
-                <img src="/assets/Colored Icon 3.svg" alt="Icon" class="mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Financial Institutions</h3>
-                <p class="text-gray-700">Umecom provides new ways for lenders, banks, insurance companies, and other financial institutions to understand applicants’ intentions and propensities. This drives financial inclusion across the developing world, especially in the absence of predictive credit data.</p>
-            </div>
+<!-- Use Cases Section -->
+<section id="use-cases" class="py-16 text-gray-900 bg-[#F7F7F7]">
+    <h2 class="text-2xl md:text-4xl font-bold text-center mb-8">
+        The Umecom platform has a number of key use cases
+    </h2>
+    <div class="grid grid grid-cols-1 gap-6 px-4 lg:grid-cols-3">
+        <div class="use-case bg-white p-6 rounded-lg shadow-lg text-center">
+            <img src="/assets/Colored Icon 1.svg" alt="Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold mb-2">Umecom for Recruitment</h3>
+            <p class="text-gray-700">Umecom offers Employers and Recruiters new ways of understanding applicants. The recruitment process needs to ensure cultural fit and character matching for specific roles.</p>
         </div>
-    </section>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img src="/assets/Colored Icon 2.svg" alt="Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold mb-2">Umecom for Employers</h3>
+            <p class="text-gray-700">Umecom allows employers to unlock the true dynamics happening in the workplace. All anonymised referrals and the unique scoring tools allow employers to see blind spots and other issues that may otherwise go unseen.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <img src="/assets/Colored Icon 3.svg" alt="Icon" class="mx-auto mb-4">
+            <h3 class="text-xl font-semibold mb-2">Umecom for Financial Institutions</h3>
+            <p class="text-gray-700">Umecom provides new ways for lenders, banks, insurance companies, and other financial institutions to understand applicants’ intentions and propensities. This drives financial inclusion across the developing world, especially in the absence of predictive credit data.</p>
+        </div>
+    </div>
+</section>
+
     
-
-    <!-- "How can Umecom help you?" Section -->
-    <section id="umecorn-help" class="py-12 bg-gray-100 text-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">
-                How can Umecorn help you?
-            </h2>
-            <p class="text-center text-gray-600 mb-8">
-                Explore tailored solutions for employers, recruiters, and financial institutions; and unlock your Social Score.
-            </p>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="/assets/help image 1.png" alt="Umecom for Employers" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Umecom for Employers</h3>
-                    <p class="text-gray-700 mb-4">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="/assets/help image 2.png" alt="Umecom for Recruitment" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Umecom for Recruitment</h3>
-                    <p class="text-gray-700 mb-4">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="/assets/help image 3.png" alt="Umecom for Financial Institutions" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Umecom for Financial Institutions</h3>
-                    <p class="text-gray-700 mb-4">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="/assets/help image 4.png" alt="Umecom for Individuals" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Umecom for Individuals</h3>
-                    <p class="text-gray-700 mb-4">Want to know your Umecom Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecom members and enhance your own reliability scores.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
-                </div>
+<!-- "How can Umecom help you?" Section -->
+<section id="umecorn-help" class="py-12 bg-white text-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">
+            How can Umecom help you?
+        </h2>
+        <p class="text-center text-gray-600 mb-8">
+            Explore tailored solutions for employers, recruiters, and financial institutions; and unlock your Social Score.
+        </p>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <!-- First Column with the larger image on laptops -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/help image 1.png" alt="Umecom for Employers" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Umecom for Employers</h3>
+                <p class="text-gray-700 mb-4">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+            </div>
+            <!-- Other Columns -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/help image 2.png" alt="Umecom for Recruitment" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Umecom for Recruitment</h3>
+                <p class="text-gray-700 mb-4">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/help image 3.png" alt="Umecom for Financial Institutions" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Umecom for Financial Institutions</h3>
+                <p class="text-gray-700 mb-4">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/help image 4.png" alt="Umecom for Individuals" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Umecom for Individuals</h3>
+                <p class="text-gray-700 mb-4">Want to know your Umecom Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecom members and enhance your own reliability scores.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--umecorn incentive-->
-    <section class="bg-blue-50 flex justify-center items-center min-h-screen p-4">
-            <div class="max-w-sm bg-white p-6 rounded-lg shadow-lg text-center">
-                <!-- Icon Section -->
-                <div class="flex justify-center mb-6">
-                    <img src="/assets/incentive.svg" alt="Umecron Incentive" class="w-[215px] h-[215px] p-[0px_0.28px_0px_0.45px] gap-0 rounded-[10.75px_0px_0px_0px]">
-                </div>
-        
-                <!-- Heading -->
-                <h2 class="text-blue-600 font-semibold text-lg mb-2">Umecron Incentive</h2>
-        
-                <!-- Main Title -->
-                <h1 class="text-black font-bold text-xl mb-4">Generate your Umecron Social Score exclusively with us and receive benefits</h1>
-        
-                <!-- Paragraph Text -->
-                <p class="text-gray-600 text-sm mb-6">
-                    Umecron aims to build the largest Social Scoring platform on the globe. To do that, it needs you. The more people and organisations that use our platform, the better we can optimise our tools with our Data team. The better we can optimise our tools, the more value we can add to job candidates and loan applicants all over the world. We want you to only use Umecron for your Social Score and Referencing. As such, if you sign up with us and do so exclusively, you form part of the Umecron Benefit pool where we allocate 20% of the company’s profits. These profits are then paid out to the benefit pool OR the payments can be forgone, and the profits sent to a charity of your choice.
-                </p>
-        
-                <!-- Button -->
-                <a href="#" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-full">Join Now</a>
-            </div>
-    </section>
+
+<!-- Umecron Incentive Section -->
+<section class="text-left p-4 md:p-8 bg-[#E8F1FF]">
+    <div class="flex flex-col xl:flex-row items-start gap-8">
+        <!-- Icon Section -->
+        <div class="flex-shrink-0">
+            <img src="/assets/incentive.svg" alt="Umecron Incentive" class="w-[215px] h-[215px] md:w-[352px] md:h-[352px] xl:w-[480px] xl:h-[480px]">
+        </div>
+
+        <!-- Text Content -->
+        <div class="flex-grow">
+            <!-- Heading -->
+            <h2 class="text-blue-600 font-semibold text-lg mb-2">Umecron Incentive</h2>
+
+            <!-- Main Title -->
+            <h1 class="mb-4 text-black font-bold text-[24px] md:text-[30px] lg:text-[36px] xl:text-[48px]">Generate your Umecron Social Score exclusively with us and receive benefits</h1>
+
+            <!-- Paragraph Text -->
+            <p class="text-gray-600 text-sm mb-6">
+                Umecron aims to build the largest Social Scoring platform on the globe. To do that, it needs you. The more people and organisations that use our platform, the better we can optimise our tools with our Data team. The better we can optimise our tools, the more value we can add to job candidates and loan applicants all over the world. We want you to only use Umecron for your Social Score and Referencing. As such, if you sign up with us and do so exclusively, you form part of the Umecron Benefit pool where we allocate 20% of the company’s profits. These profits are then paid out to the benefit pool OR the payments can be forgone, and the profits sent to a charity of your choice.
+            </p>
+
+            <!-- Button -->
+            <a href="#" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-full">Join Now</a>
+        </div>
+    </div>
+</section>
+
 
     
 
     <!-- Our Team Section -->
-    <section id="our-team" class="py-12 bg-gray-100 text-gray-900">
+    <section id="our-team" class="py-12 bg-white text-gray-900 text-center">
        <!-- Section Header -->
-    <div class="max-w-3xl mx-auto text-center mb-12">
+    <div class="max-w-3xl mx-auto text-center mb-6">
         <h2 class="text-black font-bold text-3xl mb-4">Our Team</h2>
         <p class="text-gray-600">Umecron was founded and built by a team of industry experts in Recruitment, HR, Big Data, AI, Psychometrics and Technology. We are a team that is committed to unlocking the potential in people that traditional methods cannot do. We believe in the power of perception and community.</p>
     </div>
 
     <!-- Team Members -->
-    <div class="max-w-3xl mx-auto space-y-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-24 h-24 mx-auto rounded-full mb-4">
+    <div class="max-w-full mx-auto gap-6 p-16 grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div>
+            <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Jordan Taylor</h3>
             <p class="text-blue-600 mb-2">Founder and Group CEO</p>
             <p class="text-gray-600 mb-2">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented an...</p>
@@ -190,8 +188,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Anowar Hossain</h3>
             <p class="text-blue-600 mb-2">Co-Founder and Chief Technology Officer</p>
             <p class="text-gray-600 mb-2">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
@@ -201,8 +199,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/lan.png" alt="Ian Feeney" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/lan.png" alt="Ian Feeney" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Ian Feeney</h3>
             <p class="text-blue-600 mb-2">Co-Founder and CEO Umecorn Career</p>
             <p class="text-gray-600 mb-2">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
@@ -214,8 +212,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Prashant Kumar</h3>
             <p class="text-blue-600 mb-2">Chief Data and Strategy Officer</p>
             <p class="text-gray-600 mb-2">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
@@ -226,8 +224,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/dr.png" alt="Dr of Psychometrics" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/dr.png" alt="Dr of Psychometrics" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Dr of Psychometrics</h3>
             <p class="text-blue-600 mb-2">Chief Psychometrics Officer</p>
             <p class="text-gray-600 mb-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
@@ -237,8 +235,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Faisal Mohammad</h3>
             <p class="text-blue-600 mb-2">Head of Engineering</p>
             <p class="text-gray-600 mb-2">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
@@ -249,8 +247,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Dawn Coulter</h3>
             <p class="text-blue-600 mb-2">Chief Marketing Officer</p>
             <p class="text-gray-600 mb-2">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
@@ -260,8 +258,8 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src="/assets/justin.png" alt="Justin Inniss" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <div>
+            <img src="/assets/justin.png" alt="Justin Inniss" class="w-24 h-24 mx-auto rounded-full mb-4 mt-8">
             <h3 class="text-black font-semibold text-lg">Justin Inniss</h3>
             <p class="text-blue-600 mb-2">Chief Commercial Officer</p>
             <p class="text-gray-600 mb-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
@@ -273,51 +271,56 @@
     </div>
     </section>
 
-
 <!-- Contact Us Section -->
-<section class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-800 to-blue-900 px-4 py-6">
+<section class="flex flex-col items-center justify-center bg-gradient-to-b from-blue-800 to-blue-900 px-4 py-6">
+    <h2 class="text-3xl font-bold text-center text-white mb-4">Contact Us</h2>
+    <p class="text-center text-white mb-4">
+      In order to understand how our unique solution can help your business, please fill in this contact form and we will respond to you as soon as possible.
+    </p>
+    <p class="text-center text-white mb-6">
+      You can also email us at <a href="mailto:enquiries@umecorn.com" class="underline text-white">enquiries@umecorn.com</a>
+    </p>
 
-      <h2 class="text-3xl font-bold text-center text-white mb-4">Contact Us</h2>
-      <p class="text-center text-white mb-6">
-        To understand how our unique solution can help your business, please fill out this form and we will respond to you as soon as possible.
-      </p>
-      <p class="text-center text-white mb-4">
-        You can also email us at <a href="mailto:enquiries@umecorn.com" class="underline text-white">enquiries@umecorn.com</a>
-      </p>
-      <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
-      <form>
-        <div class="mb-6">
+    <!-- Adjust the width for md and lg screens -->
+    <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-lg">
+      <form class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div>
           <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name <span class="text-red-500">*</span></label>
-          <input type="text" id="full-name" placeholder="Enter full name" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <input type="text" id="full-name" placeholder="Enter full name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
         </div>
-        <div class="mb-6">
+
+        <div>
           <label for="company" class="block text-sm font-medium text-gray-700">Company <span class="text-red-500">*</span></label>
-          <input type="text" id="company" placeholder="Enter your company name" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <input type="text" id="company" placeholder="Enter your company name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
         </div>
-        <div class="mb-6">
+
+        <div>
           <label for="email" class="block text-sm font-medium text-gray-700">Business Email Address <span class="text-red-500">*</span></label>
-          <input type="email" id="email" placeholder="Enter business email address" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <input type="email" id="email" placeholder="Enter business email address" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
         </div>
-        <div class="mb-6">
+
+        <div>
           <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number <span class="text-red-500">*</span></label>
-          <input type="tel" id="phone" placeholder="Enter phone number" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          <input type="tel" id="phone" placeholder="Enter phone number" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
         </div>
-        <div class="mb-6">
+
+        <div class="md:col-span-2">
           <label for="message" class="block text-sm font-medium text-gray-700">Message <span class="text-red-500">*</span></label>
-          <textarea id="message" placeholder="Write your message here ..." rows="4" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+          <textarea id="message" placeholder="Write your message here ..." rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
         </div>
-        <div class="text-center">
-          <button type="submit" class="w-full inline-flex justify-center py-3 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+
+        <div class="md:col-span-2 flex justify-center">
+          <button type="submit" class="w-full md:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             Submit
           </button>
         </div>
       </form>
     </div>
-   
-  </section>
+</section>
+
   
   <!-- Responsive Footer Section -->
-<footer class="bg-gray-100 py-4">
+<footer class="py-4 bg-[#F7F7F7]">
     <div class="text-center text-gray-600 text-sm sm:text-base">
       Copyright © 2024 Umecorn. All rights reserved.
     </div>

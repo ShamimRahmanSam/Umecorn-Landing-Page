@@ -32,11 +32,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-// Toggle information visibility by id
-function toggleInfo(id) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.classList.toggle('hidden');
-    }
-}

@@ -4,61 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umecom</title>
+    <title>Umecorn</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body class="bg-white text-black">
-
-    <!-- Navbar -->
-    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 p-4 bg-transparent text-white transition-all duration-300">
-        <div class="flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <img src="/assets/Logo-Generic.svg" alt="Logo" class="h-10">
-            </div>
-            <nav class="hidden lg:flex space-x-8">
-                <a href="#" class="hover:text-gray-200">Home</a>
-                <a href="#" class="hover:text-gray-200">Cases</a>
-                <a href="#" class="hover:text-gray-200">Team</a>
-                <a href="#" class="hover:text-gray-200">Contact us</a>
-            </nav>
-            <div class="flex justify-between items-center">
-            <a href="#" class="hidden md:block bg-white font-bold text-[14px] text-[#2F45FF] py-3 px-4 rounded-lg mr-4">Get Started</a>
-
-            <!-- Burger Button (Visible on Mobile and MD, Hidden on LG and above) -->
-            <div class="flex items-center bg-[#2F45FF] rounded-lg p-2 md:block lg:hidden ">
-                <button id="burger" class="focus:outline-none">
-                    <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-5">
-                </button>
-            </div>
-            </div>
+<!-- Navbar -->
+<header id="mainHeader" class="fixed w-full top-0 left-0 z-50 p-4 bg-transparent text-white transition-all duration-300">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="/assets/Logo-Generic.svg" alt="Logo" class="h-10">
         </div>
-    </header>
-    
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-blue-600 p-4">
-        <nav class="flex flex-col space-y-4 text-white">
+        <nav class="hidden lg:flex space-x-8">
             <a href="#" class="hover:text-gray-200">Home</a>
             <a href="#" class="hover:text-gray-200">Cases</a>
             <a href="#" class="hover:text-gray-200">Team</a>
             <a href="#" class="hover:text-gray-200">Contact us</a>
-            <a href="#" class="bg-white text-blue-600 py-2 px-4 rounded-full">Get Started</a>
         </nav>
-        <button id="closeMenu" class="mt-4 text-white">Close</button>
-    </div>
-    
-    <!-- Hero Section -->
-    <section style="background: linear-gradient(180deg, #5676FF 0%, #1F3699 96.77%);" class="text-center text-white pt-24">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 p-4">Perception into Science</h1>
-        <p class="max-w-xl mx-auto text-lg md:text-xl mb-8 p-4">Umecorn is a Research and Development Company in the Psychometrics space. Umecorn provides a highly sophisticated social referencing tool that allows third parties to score people's core character traits and behavioral propensities. Umecorn goes way beyond self-perception tools and leverages the knowledge and assessments of others.</p>
-        <div class="relative">
-            <img src="/assets/07_HR-Dashboard-Openings-Applicant Profile New 1.png" 
-                 alt="Devices" 
-                 class="mx-auto w-[296px] h-[159px] md:w-1/2 md:h-auto object-contain">
+        <div class="flex justify-between items-center">
+            <!-- Get Started Button for md and above -->
+            <a href="#" class="hidden md:block bg-white font-bold text-[14px] text-[#2F45FF] py-3 px-4 rounded-lg mr-4">Get Started</a>
+
+            <!-- Burger Button (Visible on Mobile and MD, Hidden on LG and above) -->
+            <div class="flex items-center bg-[#2F45FF] rounded-lg p-2 md:block lg:hidden">
+                <button id="burger" class="focus:outline-none">
+                    <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-5">
+                </button>
+            </div>
         </div>
-    </section>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden lg:hidden bg-blue-600 p-4">
+    <nav class="flex flex-col space-y-4 text-white">
+        <a href="#" class="hover:text-gray-200">Home</a>
+        <a href="#" class="hover:text-gray-200">Cases</a>
+        <a href="#" class="hover:text-gray-200">Team</a>
+        <a href="#" class="hover:text-gray-200">Contact us</a>
+        <!-- Get Started Button only for sm screens -->
+        <a href="#" class="bg-white text-blue-600 py-2 px-4 rounded-full md:hidden">Get Started</a>
+    </nav>
+    <button id="closeMenu" class="mt-4 text-white">Close</button>
+</div>
+
+<!-- Hero Section -->
+<section style="background: linear-gradient(180deg, #5676FF 0%, #1F3699 96.77%);" class="text-center text-white pt-24">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 p-4">Perception into Science</h1>
+    <p class="max-w-xl mx-auto text-lg md:text-xl mb-8 p-4">Umecorn is a Research and Development Company in the Psychometrics space. Umecorn provides a highly sophisticated social referencing tool that allows third parties to score people's core character traits and behavioral propensities. Umecorn goes way beyond self-perception tools and leverages the knowledge and assessments of others.</p>
+    <div class="relative">
+        <img src="/assets/07_HR-Dashboard-Openings-Applicant Profile New 1.png" 
+             alt="Devices" 
+             class="mx-auto w-[296px] h-[159px] md:w-1/2 md:h-auto object-contain">
+    </div>
+</section>
     
    
     <!-- ABOUT -->
@@ -95,7 +95,7 @@
     </div>
 </section>
 
-    
+
 <!-- "How can Umecom help you?" Section -->
 <section id="umecorn-help" class="py-12 bg-white text-gray-900">
     <div class="container mx-auto px-4">
@@ -105,36 +105,77 @@
         <p class="text-center text-gray-600 mb-8">
             Explore tailored solutions for employers, recruiters, and financial institutions; and unlock your Social Score.
         </p>
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <!-- First Column with the larger image on laptops -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="/assets/help image 1.png" alt="Umecom for Employers" class="w-full h-64 object-cover rounded-t-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Employers</h3>
-                <p class="text-gray-700 mb-4">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
-                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+            <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg relative group">
+                <img src="/assets/help image 1.png" alt="Umecom for Employers" class="w-full h-64 object-cover rounded-t-lg mb-4 lg:h-full lg:rounded-lg">
+                
+                <!-- Text for small and medium screens -->
+                <h3 class="text-xl font-semibold mb-2 lg:hidden">Umecom for Employers</h3>
+                <p class="text-gray-700 mb-4 lg:hidden">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold lg:hidden">Register Now &rarr;</a>
+
+                <!-- Text overlay for large screens -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block">Umecom for Employers</h3>
+                    <p class="text-white mb-4 hidden lg:block">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block">Register Now &rarr;</a>
+                </div>
             </div>
+
             <!-- Other Columns -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="/assets/help image 2.png" alt="Umecom for Recruitment" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Recruitment</h3>
-                <p class="text-gray-700 mb-4">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
-                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+            <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-lg relative group">
+                <img src="/assets/help image 2.png" alt="Umecom for Recruitment" class="w-full h-48 object-cover rounded-t-lg mb-4 lg:h-full lg:rounded-lg">
+
+                <!-- Text for small and medium screens -->
+                <h3 class="text-xl font-semibold mb-2 lg:hidden">Umecom for Recruitment</h3>
+                <p class="text-gray-700 mb-4 lg:hidden">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold lg:hidden">Register Now &rarr;</a>
+
+                <!-- Text overlay for large screens -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block">Umecom for Recruitment</h3>
+                    <p class="text-white mb-4 hidden lg:block">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block">Register Now &rarr;</a>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="/assets/help image 3.png" alt="Umecom for Financial Institutions" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Financial Institutions</h3>
-                <p class="text-gray-700 mb-4">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
-                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+
+            <div class="lg:col-span-1 bg-white p-6 rounded-lg shadow-lg relative group">
+                <img src="/assets/help image 3.png" alt="Umecom for Financial Institutions" class="w-full h-48 object-cover rounded-t-lg mb-4 lg:h-full lg:rounded-lg">
+
+                <!-- Text for small and medium screens -->
+                <h3 class="text-xl font-semibold mb-2 lg:hidden">Umecom for Financial Institutions</h3>
+                <p class="text-gray-700 mb-4 lg:hidden">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold lg:hidden">Register Now &rarr;</a>
+
+                <!-- Text overlay for large screens -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block">Umecom for Financial Institutions</h3>
+                    <p class="text-white mb-4 hidden lg:block">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block">Register Now &rarr;</a>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="/assets/help image 4.png" alt="Umecom for Individuals" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Umecom for Individuals</h3>
-                <p class="text-gray-700 mb-4">Want to know your Umecom Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecom members and enhance your own reliability scores.</p>
-                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">Register Now &rarr;</a>
+
+            <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg relative group">
+                <img src="/assets/help image 4.png" alt="Umecom for Individuals" class="w-full h-48 object-cover rounded-t-lg mb-4 lg:h-full lg:rounded-lg">
+
+                <!-- Text for small and medium screens -->
+                <h3 class="text-xl font-semibold mb-2 lg:hidden">Umecom for Individuals</h3>
+                <p class="text-gray-700 mb-4 lg:hidden">Want to know your Umecom Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecom members and enhance your own reliability scores.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold lg:hidden">Register Now &rarr;</a>
+
+                <!-- Text overlay for large screens -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block">Umecom for Individuals</h3>
+                    <p class="text-white mb-4 hidden lg:block">Want to know your Umecom Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecom members and enhance your own reliability scores.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block">Register Now &rarr;</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 
 <!-- Umecron Incentive Section -->

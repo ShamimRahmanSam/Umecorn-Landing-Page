@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (burger) {
         burger.addEventListener('click', function () {
             if (mobileMenu) {
-                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.remove('hidden');
             }
         });
     }
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function() {
         if (header) {
             if (window.scrollY > 0) {
-                header.classList.add('bg-blue-900/90', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.add('bg-white', 'backdrop-blur-sm', 'shadow-md');
             } else {
-                header.classList.remove('bg-blue-900/90', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.remove('bg-white', 'backdrop-blur-sm', 'shadow-md');
             }
         }
     });

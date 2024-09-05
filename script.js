@@ -7,21 +7,44 @@ document.addEventListener('DOMContentLoaded', function () {
     const secondLogo = document.getElementById('secondLogo');
     const navLinks = document.querySelectorAll('#navLinks .nav-link');
     const getStartedBtn = document.getElementById('getStartedBtn');
+    const topBtnColor = document.getElementById('topBtnColor');
 
     // Toggle mobile menu
     if (burger) {
         burger.addEventListener('click', function () {
-            if (mobileMenu) {
-                mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.remove('hidden');
+            burger.classList.add('hidden');
+            closeMenu.classList.remove('hidden');
+            defaultLogo.classList.add('hidden');
+            secondLogo.classList.remove('hidden');
+            topBtnColor.style.backgroundColor = '#f7f7f7'; 
+
+            if (getStartedBtn) {
+                getStartedBtn.classList.add('bg-blue-600', 'text-white');
+                getStartedBtn.classList.remove('bg-white', 'text-[#2F45FF]');
             }
+
+            // Add border when menu is opened
+            header.classList.add('header-with-bottom-border');
+            header.style.borderBottom = '1px solid #E4E4E5'; // Add border
         });
     }
 
     if (closeMenu) {
         closeMenu.addEventListener('click', function () {
-            if (mobileMenu) {
-                mobileMenu.classList.add('hidden');
-            }
+            mobileMenu.classList.add('hidden');
+            closeMenu.classList.add('hidden');
+            burger.classList.remove('hidden');
+            secondLogo.classList.add('hidden');
+            defaultLogo.classList.remove('hidden'); // Ensure default logo is shown immediately
+            topBtnColor.style.backgroundColor = '#2F45FF';
+            
+            // Remove border when menu is closed
+            header.classList.remove('header-with-bottom-border');
+            header.style.borderBottom = 'none'; // Remove border
+
+            // Revert header styles when closing the mobile menu
+            revertHeaderStyles();
         });
     }
 
@@ -29,12 +52,24 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('#mobileMenu a').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
+            closeMenu.classList.add('hidden');
+            burger.classList.remove('hidden');
+            secondLogo.classList.add('hidden');
+            defaultLogo.classList.remove('hidden'); // Ensure default logo is shown immediately
+
+            if (getStartedBtn) {
+                getStartedBtn.classList.add('bg-white', 'text-[#2F45FF]');
+                getStartedBtn.classList.remove('bg-blue-600', 'text-white');
+            }
+
+            // Ensure logo visibility matches the current scroll state
+            revertHeaderStyles();
         });
     });
 
-    // Function to apply white header styles
+    // Function to apply white header styles on scroll
     function applyWhiteHeaderStyles() {
-        header.classList.add('bg-white', 'text-black');
+        header.classList.add('bg-white', 'text-black', 'header-with-bottom-border');
         defaultLogo.classList.add('hidden');
         secondLogo.classList.remove('hidden');
         navLinks.forEach(link => {
@@ -47,10 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Function to revert header styles
+    // Function to revert header styles when scrolled back to top
     function revertHeaderStyles() {
         if (window.scrollY === 0) {
-            header.classList.remove('bg-white', 'text-black');
+            header.classList.remove('bg-white', 'text-black', 'header-with-bottom-border');
+            header.style.borderBottom = 'none'; // Remove border if at the top
             defaultLogo.classList.remove('hidden');
             secondLogo.classList.add('hidden');
             navLinks.forEach(link => {
@@ -65,21 +101,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Header background and logo change on scroll
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
             applyWhiteHeaderStyles();
         } else {
-            revertHeaderStyles();
-        }
-    });
-
-    // Header background and logo change on hover
-    header.addEventListener('mouseover', function() {
-        applyWhiteHeaderStyles();
-    });
-
-    header.addEventListener('mouseout', function() {
-        if (window.scrollY === 0) {
             revertHeaderStyles();
         }
     });

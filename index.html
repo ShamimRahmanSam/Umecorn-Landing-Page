@@ -10,16 +10,13 @@
 </head>
 
 <body class="bg-white text-black scroll-smooth">
-    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 xl:py-6 px-3 xl:px-44 bg-transparent text-white transition-all duration-300">
+    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 xl:py-6 px-3 xl:px-44 text-white transition-all duration-300">
     <div class="flex justify-between items-center">
-        <!-- Left: Logo -->
         <div class="flex items-center space-x-4">
-            <!-- First Logo -->
             <img id="defaultLogo" src="/assets/Logo-Generic.svg" alt="Logo" class="h-10 transition-all duration-300 lg:h-12 md:px-8">
             <img id="secondLogo" src="/assets/Logo-Generic-2.svg" alt="Logo" class="h-10 left-[-4px] absolute hidden md:px-8 lg:h-12 xl:px-48 xl:left-[0px]">
         </div>
 
-        <!-- Center: Navigation Links -->
         <nav id="navLinks" class="hidden lg:flex space-x-16 text-base absolute left-1/2 transform -translate-x-1/2 lg:mt-4" style="font-family: 'Roboto', sans-serif;">
             <a href="#home" class="nav-link text-white">Home</a>
             <a href="#cases" class="nav-link text-white">Cases</a>
@@ -27,14 +24,16 @@
             <a href="#contact" class="nav-link text-white">Contact us</a>
         </nav>
 
-        <!-- Right: Get Started Button and Burger Menu -->
         <div class="flex items-center space-x-4 md:px-8">
-            <a id="getStartedBtn" href="#" class="hidden bg-white font-bold text-[#2F45FF] py-3 px-3 rounded-lg md:block md:text-sm lg:px-4 style="font-family: 'Epilogue', sans-serif;">
+            <a id="getStartedBtn" href="#" class="hidden bg-white font-bold text-[#2F45FF] py-4 px-4 rounded-lg text-sm md:block" style="font-family: 'Epilogue', sans-serif;">
                 Get Started
             </a>
-            <div class="flex items-center bg-[#2F45FF] rounded-lg p-2 md:p-3 lg:hidden">
+            <div id="topBtnColor" class="relative flex items-center bg-[#2F45FF] rounded-lg p-2 md:p-3 lg:hidden">
                 <button id="burger" class="focus:outline-none">
                     <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-6">
+                </button>
+                <button id="closeMenu" class="focus:outline-none hidden">
+                    <img src="/assets/close.png" alt="Close Menu" class="w-6 h-6">
                 </button>
             </div>
         </div>
@@ -42,20 +41,22 @@
 </header>
 
 <!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 p-3">
+<div id="mobileMenu" class="hidden fixed inset-0 bg-white z-10 p-3 flex flex-col justify-between h-screen">
     <nav class="mt-20">
         <div class="flex flex-col space-y-4 text-gray-800" style="font-family: 'Roboto', sans-serif;">
-            <a href="#home" class="hover:text-gray-600">Home</a>
-            <a href="#cases" class="hover:text-gray-600">Cases</a>
-            <a href="#team" class="hover:text-gray-600">Team</a>
-            <a href="#contact" class="hover:text-gray-600">Contact us</a>
+            <a href="#home" class="hover:text-[#212126]">Home</a>
+            <a href="#cases" class="hover:text-[#212126]">Cases</a>
+            <a href="#team" class="hover:text-[#212126]">Team</a>
+            <a href="#contact" class="hover:text-[#212126]">Contact us</a>
         </div>
-        <!-- Get Started Button only for sm screens -->
-        <div class="flex justify-center text-center items-center mt-40" style="font-family: 'Epilogue', sans-serif;">
-            <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded-full">Get Started</a>
-        </div>
-        <button id="closeMenu" class="mt-4 text-black">Close</button>
     </nav>
+
+    <!-- Get Started Button for sm and md screens, positioned at the bottom -->
+    <div class="mt-auto flex justify-center text-center items-center pb-6 sm:pb-8 md:pb-10 w-full" style="font-family: 'Epilogue', sans-serif;">
+        <a href="#" class="bg-blue-600 text-white py-3 px-20 rounded-lg text-center text-sm">
+            Get Started
+        </a>
+    </div>
 </div>
 
     
@@ -127,7 +128,7 @@
 <!-- "How can Umecorn help you?" Section -->
 <section class="py-8 md:py-12 lg:py-20 bg-white">
     <div class="container mx-auto px-3">
-        <h2 class="text-[#00000A] text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center mb-3 lg:mb-6 xl:font-extrabold" style="font-family: 'Epilogue', sans-serif;">
+        <h2 class="text-[#00000A] font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center mb-3 lg:mb-6 xl:font-extrabold" style="font-family: 'Epilogue', sans-serif;">
             How can Umecorn help you?
         </h2>
         <p class="text-center text-[#212126] mb-4 md:text-lg md:px-8 lg:mb-6 lg:text-xl xl:text-2xl lg:px-28 xl:px-60" style="font-family: 'Roboto', sans-serif;">
@@ -137,7 +138,7 @@
             <!-- First Column with the larger image on laptops (60%) -->
             <div class="col-span-12 shadow-sm lg:col-span-7 bg-white rounded-lg relative group">
                 <img src="/assets/help image 1.png" alt="Umecorn for Employers" class="w-[296px] h-[174px] object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[680px] md:h-[308px] xl:w-[864px]">
-                <h3 class="text-xl font-semibold text-white absolute inset-x-0 bottom-4 left-6 lg:text-2xl xl:text-3xl xl:bottom-6" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
+
                 <!-- Text for small and medium screens -->
                 <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
                     <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
@@ -156,8 +157,7 @@
             <!-- Second Column (40%) -->
             <div class="col-span-12 lg:col-span-5 bg-white rounded-lg relative group">
                 <img src="/assets/help image 2.png" alt="Umecorn for Recruitment" class="w-[296px] h-[174px] object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:h-80 md:w-[680px] md:h-[308px]">
-                <!-- Title for large screens -->
-                <h3 class="text-xl font-semibold text-white absolute inset-x-0 bottom-4 left-6 lg:text-2xl xl:text-3xl xl:bottom-6" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
+                               
                 <!-- Text for small and medium screens -->
                 <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
                     <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
@@ -176,8 +176,6 @@
             <!-- Third Column (40%) -->
             <div class="col-span-12 lg:col-span-5 bg-white rounded-lg relative group">
                 <img src="/assets/help image 3.png" alt="Umecorn for Financial Institutions" class="w-[296px] h-[174px] object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:h-80 md:w-[680px] md:h-[308px]">
-                 <!-- Title for large screens -->
-                <h3 class="text-xl font-semibold text-white absolute inset-x-0 bottom-4 left-6 lg:text-2xl xl:text-3xl xl:bottom-6" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
 
                 <!-- Text for small and medium screens -->
                 <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
@@ -197,8 +195,7 @@
             <!-- Fourth Column with the larger image on laptops (60%) -->
             <div class="col-span-12 lg:col-span-7 bg-white rounded-lg relative group">
                 <img src="/assets/help image 4.png" alt="Umecorn for Individuals" class="w-[296px] h-[174px] object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[680px] md:h-[308px] xl:w-[864px]">
-                 <!-- Title for large screens -->
-                 <h3 class="text-xl font-semibold text-white absolute inset-x-0 bottom-4 left-6 lg:text-2xl xl:text-3xl xl:bottom-6" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
+                 
                 <!-- Text for small and medium screens -->
                 <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
                     <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
@@ -222,7 +219,7 @@
 
 <!-- Umecorn Incentive Section -->
 <section id="incentive" class="p-3 pt-8 pb-8 md:p-8  xl:pb-16 bg-[#E8F1FF] lg:px-12 lg:py-20 xl:py-24 xl:px-80">
-    <div class="flex flex-col xl:flex-row items-start gap-8">
+    <div class="flex flex-col 2xl:flex-row items-start gap-8">
         <!-- Icon Section -->
         <div class="flex-shrink-0">
             <img src="/assets/incentive.svg" alt="Umecorn Incentive" class="w-[215px] h-[215px] md:w-[352px] md:h-[352px] xl:w-[480px] xl:h-[480px]">
@@ -259,7 +256,7 @@
     <!-- Team Members -->
     <div class="max-w-full mx-auto gap-11 grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
         <div>
-            <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
@@ -270,7 +267,7 @@
         </div>
 
         <div>
-            <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Anowar Hossain</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and Chief Technology Officer</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
@@ -281,7 +278,7 @@
         </div>
 
         <div>
-            <img src="/assets/lan.png" alt="Ian Feeney" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/lan.png" alt="Ian Feeney" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Ian Feeney</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and CEO Umecorn Career</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
@@ -294,7 +291,7 @@
         </div>
 
         <div>
-            <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Prashant Kumar</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Data and Strategy Officer</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
@@ -306,7 +303,7 @@
         </div>
 
         <div>
-            <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dr of Psychometrics</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Psychometrics Officer</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
@@ -317,7 +314,7 @@
         </div>
 
         <div>
-            <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Faisal Mohammad</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Head of Engineering</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
@@ -329,7 +326,7 @@
         </div>
 
         <div>
-            <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dawn Coulter</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Marketing Officer</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
@@ -340,7 +337,7 @@
         </div>
 
         <div>
-            <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 h-36">
+            <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
             <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'epi', sans-serif;">Justin Inniss</h3>
             <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Commercial Officer</p>
             <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>

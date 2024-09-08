@@ -355,62 +355,58 @@
 </section>
 
 <!-- Contact Us Section -->
-<section id="contact" class="flex flex-col items-center justify-center bg-[#0A0B5C] px-3 pt-6 pb-8 md:pt-14 md:pb-14 lg:py-20">
+<section id="contact" class="flex flex-col items-center justify-center bg-[#0A0B5C] px-3 pt-8 pb-8 md:pt-14 md:pb-14 lg:pt-[72px]">
     <h2 class="text-2xl font-bold text-center text-white mb-3 lg:mb-8 md:text-3xl lg:text-4xl xl:text-5xl" style="font-family: 'Epilogue', sans-serif;">Contact Us</h2>
-    <p class="text-center text-white mb-4 font-normal md:text-lg lg:text-xl lg:px-20" style="font-family: 'Roboto', sans-serif;">
+    <p class="text-center text-white mb-4 font-normal md:text-lg lg:text-xl md:px-10 lg:px-32 2xl:px-[32rem]" style="font-family: 'Roboto', sans-serif;">
       In order to understand how our unique solution can help your business, please fill in this contact form and we will respond to you as soon as possible.
     </p>
-    <p class="text-center text-white mb-4 font-normal md:text-lg lg:mb-8" style="font-family: 'Roboto', sans-serif;">
+    <p class="text-center text-white mb-4 font-normal md:text-lg md:mb-8" style="font-family: 'Roboto', sans-serif;">
       You can also email us at <a href="mailto:enquiries@umecorn.com" class="font-normal text-[#85A8FF] md:text-lg">enquiries@umecorn.com</a>
     </p>
 
     <!-- Adjust the width for md and lg screens -->
-    <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl bg-white p-3 md:p-6 lg:p-8 rounded-lg shadow-lg" style="font-family: 'Roboto', sans-serif;">
-      <form class="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div>
-          <label for="full-name" class="block text-sm font-normal #45454D">Full Name <span class="text-red-500">*</span></label>
-          <input type="text" id="full-name" placeholder="Enter full name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
-        </div>
-
-        <div>
-          <label for="company" class="block text-sm font-normal #45454D">Company <span class="text-red-500">*</span></label>
-          <input type="text" id="company" placeholder="Enter your company name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
-        </div>
-
-        <div>
-          <label for="email" class="block text-sm font-normal #45454D">Business Email Address <span class="text-red-500">*</span></label>
-          <input type="email" id="email" placeholder="Enter business email address" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
-        </div>
-
-        <div>
-          <label for="phone" class="block text-sm font-normal #45454D">Phone Number <span class="text-red-500">*</span></label>
-          <input type="tel" id="phone" placeholder="Enter phone number" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
-        </div>
-
-        <div class="md:col-span-2 relative">
-            <label for="message" class="block text-sm font-normal text-gray-700">
-              Message <span class="text-red-500">*</span>
-            </label>
-            <textarea
-              id="message"
-              placeholder="Write your message here ..."
-              rows="5"
-              class="mt-1 block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base resize-none"
-              style="border-radius: 10px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);"
-            ></textarea>
-            <div class="absolute bottom-0 right-0 w-6 h-6">
-              <img src="/assets/text area.png" alt="Three angular lines" class="w-5 h-5 mx-auto">
-            </div>
+    <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl bg-white rounded-2xl shadow-lg px-3 md:px-6 pt-4 md:pt-8 pb-3 md:pb-6" style="font-family: 'Roboto', sans-serif;">
+        <form class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+          <div class="pb-6 md:pb-0">
+            <label for="full-name" class="block text-sm font-normal #45454D md:pb-1">Full Name <span class="text-red-500">*</span></label>
+            <input type="text" id="full-name" placeholder="Enter full name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
           </div>
-
-        <div class="md:col-span-2 flex justify-center" style="font-family: 'Epilogue', sans-serif;">
-          <button type="submit" class="w-full md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#B3CCFF] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+      
+          <div class="pb-6 md:pb-0">
+            <label for="company" class="block text-sm font-normal #45454D md:pb-1">Company <span class="text-red-500">*</span></label>
+            <input type="text" id="company" placeholder="Enter your company name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+          </div>
+      
+          <div class="pb-6 md:pb-0">
+            <label for="email" class="block text-sm font-normal #45454D md:pb-1">Business Email Address <span class="text-red-500">*</span></label>
+            <input type="email" id="email" placeholder="Enter business email address" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+          </div>
+      
+          <div class="pb-6 md:pb-0">
+            <label for="phone" class="block text-sm font-normal #45454D md:pb-1">Phone Number <span class="text-red-500">*</span></label>
+            <input type="tel" id="phone" placeholder="Enter phone number" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+          </div>
+      
+          <div class="md:col-span-2 relative pb-4 md:pb-2">
+            <label for="message" class="block text-sm font-normal #45454D md:pb-1">Message <span class="text-red-500">*</span></label>
+            <textarea id="message" placeholder="Write your message here ..." rows="5" class="mt-1 block w-full h-[136px] py-2 px-4 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA] resize-none" style="border-radius: 10px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);"></textarea>
+            <div class="absolute bottom-3.5 right-0 w-6 h-6 md:bottom-1.5 md:right-0">
+                <img src="/assets/text area.png" alt="Three angular lines" class="w-5 h-5 mx-auto">
+              </div>
+              
+          </div>
+      
+          <div class="pb-0 md:col-span-2 flex justify-center" style="font-family: 'Epilogue', sans-serif;">
+            <button type="submit" class="w-full h-[48px] md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#B3CCFF] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      
 </section>
+
   
   <!-- Responsive Footer Section -->
 <footer class="py-4 bg-[#F7F7F7] lg:py-6">

@@ -108,4 +108,21 @@ document.addEventListener('DOMContentLoaded', function () {
             revertHeaderStyles();
         }
     });
+
+    // Smooth scroll for all internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default jump behavior
+            const targetId = this.getAttribute('href').substring(1); // Get section ID
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Smooth scroll to the section
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // Offset for fixed header
+                    behavior: 'smooth' // Enable smooth scroll
+                });
+            }
+        });
+    });
 });

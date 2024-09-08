@@ -9,8 +9,8 @@
     <script src="script.js" defer></script>
 </head>
 
-<body class="bg-white text-black scroll-smooth">
-    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 xl:py-6 px-3 xl:px-44 text-white transition-all duration-300">
+<body class="scroll-smooth bg-white text-black">
+   <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 xl:py-6 px-3 xl:px-44 text-white transition-all duration-300">
     <div class="flex justify-between items-center">
         <div class="flex items-center space-x-4">
             <img id="defaultLogo" src="/assets/Logo-Generic.svg" alt="Logo" class="h-10 transition-all duration-300 lg:h-12 md:px-8">
@@ -39,6 +39,7 @@
         </div>
     </div>
 </header>
+
 
 <!-- Mobile Menu -->
 <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-10 p-3 flex flex-col justify-between h-screen">
@@ -87,7 +88,7 @@
 
    
     <!-- About section -->
-<section class="text-center h-auto px-4 py-8 md:px-11 md:py-14 lg:px-14 lg:py-20 xl:px-80 bg-white text-[#00000A] border-b border-gray-300 mx-auto">
+<section class="text-center h-auto px-4 py-8 md:px-11 md:py-14 lg:px-14 lg:py-20 xl:px-80 bg-white text-[#00000A] mx-auto">
     <h1 class=" font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl p-2 md:p-3 lg:px-12 xl:px-20 xl:p-7 2xl:font-extrabold" style="font-family: 'Epilogue', sans-serif; margin-bottom: 0.3rem;">
         Revolutionising Global Understanding through Data
     </h1>
@@ -260,95 +261,111 @@
 
     <!-- Team Members -->
     <div class="max-w-full mx-auto gap-11 grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-        <div>
-            <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info1')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info1" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.</p>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info1')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info1" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Anowar Hossain</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and Chief Technology Officer</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info2')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info2" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Anowar Hossain</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and Chief Technology Officer</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info2')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info2" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
+                </div>
+        </div>
+        </div>
+
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/lan.png" alt="Ian Feeney" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Ian Feeney</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and CEO Umecorn Career</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info3')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info3" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unparalleled expertise. Most recently, he served as the Director of Talent Acquisition for EMEA at the global IT leader, Dell Technologies, where he spearheaded the integration of cutting-edge HR solutions that transformed the organisation's recruitment capabilities.
+                        As the global lead for Dell's Innovation Council, Ian pioneered the identification and implementation of transformative talent technologies. His unwavering commitment to data-driven insights and masterful approach to driving organisational change have been instrumental in professionalising recruitment processes, elevating the candidate experience, and ensuring strategic alignment.
+                        Now, Ian draws from his previous entrepreneurial experience in the SaaS domain to channel his energy into developing Umecorn, a game-changing recruitment enablement platform poised to disrupt the talent acquisition and HR technology markets. Recognised as a trusted advisor and driving force within the industry, Ian's deep domain expertise and innovative spirit have solidified his reputation as a leader in this space.</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <img src="/assets/lan.png" alt="Ian Feeney" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Ian Feeney</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Co-Founder and CEO Umecorn Career</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info3')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info3" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unparalleled expertise. Most recently, he served as the Director of Talent Acquisition for EMEA at the global IT leader, Dell Technologies, where he spearheaded the integration of cutting-edge HR solutions that transformed the organisation's recruitment capabilities.
-                    As the global lead for Dell's Innovation Council, Ian pioneered the identification and implementation of transformative talent technologies. His unwavering commitment to data-driven insights and masterful approach to driving organisational change have been instrumental in professionalising recruitment processes, elevating the candidate experience, and ensuring strategic alignment.
-                    Now, Ian draws from his previous entrepreneurial experience in the SaaS domain to channel his energy into developing Umecorn, a game-changing recruitment enablement platform poised to disrupt the talent acquisition and HR technology markets. Recognised as a trusted advisor and driving force within the industry, Ian's deep domain expertise and innovative spirit have solidified his reputation as a leader in this space.</p>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Prashant Kumar</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Data and Strategy Officer</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info4')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info4" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts and directions for our portfolio. In addition, he is currently serving as advisor to a few deep tech start-ups and scales in the domain of AI/ML, cloud infrastructure and scaled customer applications. Previously, he was CTO and a co-founder of Cardinality Limited where he successfully led the product portfolio, strategy and direction of the organisation and raising multiple rounds of funding. He was pivotal in convincing some of the Tier-1 operators on the Cardinality platform and delivered some of the first and biggest big data solutions harnessing the power of billions of events everyday.
+                        Before founding Cardinality, Prashant spent over a decade working with major telecommunications service providers like Telefonica, Deutsche Telekom, Hutchison (3), and AT&T. During this time, he was the architect of some of the biggest online charging solutions. Whilst working for Telefonica UK he was responsible for the solution architecture of their big data analytics solution; he evaluated potential suppliers and prototyping approaches, architected the solution and assisted in the implementation of one of Europe’s largest Hadoop clusters. Prashant has a Master's degree from London School of Economics, focusing on System Design in Context and a Bachelor's degree in software engineering focusing on designing scalable business data systems and mobile communication protocols.</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Prashant Kumar</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Data and Strategy Officer</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info4')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info4" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts and directions for our portfolio. In addition, he is currently serving as advisor to a few deep tech start-ups and scales in the domain of AI/ML, cloud infrastructure and scaled customer applications. Previously, he was CTO and a co-founder of Cardinality Limited where he successfully led the product portfolio, strategy and direction of the organisation and raising multiple rounds of funding. He was pivotal in convincing some of the Tier-1 operators on the Cardinality platform and delivered some of the first and biggest big data solutions harnessing the power of billions of events everyday.
-                    Before founding Cardinality, Prashant spent over a decade working with major telecommunications service providers like Telefonica, Deutsche Telekom, Hutchison (3), and AT&T. During this time, he was the architect of some of the biggest online charging solutions. Whilst working for Telefonica UK he was responsible for the solution architecture of their big data analytics solution; he evaluated potential suppliers and prototyping approaches, architected the solution and assisted in the implementation of one of Europe’s largest Hadoop clusters. Prashant has a Master's degree from London School of Economics, focusing on System Design in Context and a Bachelor's degree in software engineering focusing on designing scalable business data systems and mobile communication protocols.</p>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dr of Psychometrics</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Psychometrics Officer</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info5')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info5" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dr of Psychometrics</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Psychometrics Officer</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info5')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info5" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
-            </div>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Faisal Mohammad</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Head of Engineering</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info6')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info6" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>A computer science graduate and specialist in architecting technical platforms, overseeing development projects, team management, infrastructure builds and UI/UX design across industries such as financial services, logistics, e-commerce, retail, and healthcare. He has over 14 years of  technical development and leadership expertise across Europe, the Middle East, and Asia.
+                    </p>
+                </div>
+        </div>
         </div>
 
-        <div>
-            <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Faisal Mohammad</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Head of Engineering</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info6')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info6" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>A computer science graduate and specialist in architecting technical platforms, overseeing development projects, team management, infrastructure builds and UI/UX design across industries such as financial services, logistics, e-commerce, retail, and healthcare. He has over 14 years of  technical development and leadership expertise across Europe, the Middle East, and Asia.
-                </p>
-            </div>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dawn Coulter</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Marketing Officer</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info7')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info7" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Global Head of Strategy with McCann Erickson Worldwide.. Dawn has worked with international brands, including Smythson; Hackett; Sergio Rossi; Credit Suisse; Gucci Group; M&S  Pepe Jeans London; Unilever Ice Cream and Frozen Food; Forte Hotels.</p>
+                </div>
+        </div>
         </div>
 
-        <div>
-            <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dawn Coulter</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Marketing Officer</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info7')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info7" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Global Head of Strategy with McCann Erickson Worldwide.. Dawn has worked with international brands, including Smythson; Hackett; Sergio Rossi; Credit Suisse; Gucci Group; M&S  Pepe Jeans London; Unilever Ice Cream and Frozen Food; Forte Hotels.</p>
-            </div>
-        </div>
-
-        <div>
-            <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-            <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'epi', sans-serif;">Justin Inniss</h3>
-            <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Commercial Officer</p>
-            <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
-            <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info8')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-            <div id="info8" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
-                <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+        <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
+            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+                <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'epi', sans-serif;">Justin Inniss</h3>
+                <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Chief Commercial Officer</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
+                <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info8')" style="font-family: 'Roboto', sans-serif;">Read more</button>
+                <div id="info8" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
+                    <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -397,7 +414,7 @@
           </div>
       
           <div class="pb-0 md:col-span-2 flex justify-center" style="font-family: 'Epilogue', sans-serif;">
-            <button type="submit" class="w-full h-[48px] md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#B3CCFF] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <button type="submit" class="w-full h-[48px] md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#B3CCFF] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
               Submit
             </button>
           </div>

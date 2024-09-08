@@ -252,9 +252,9 @@
 
 
 <!-- Our Team Section -->
-<section id="team" class="pt-8 pb-12 bg-white text-center md:px-10 md:py-12 md:pb-16 lg:pt-16">
+<section id="team" class="pt-8 pb-12 bg-white text-center md:px-10 md:py-12 md:pb-16 lg:pt-16 xl:pt-28">
        <!-- Section Header -->
-    <div class="max-w-3xl mx-auto text-center mb-6 lg:mb-8">
+    <div class="max-w-3xl xl:max-w-5xl mx-auto text-center mb-6 lg:mb-8">
         <h2 class="text-[#00000A] font-bold text-2xl mb-1 md:text-3xl lg:text-4xl xl:text-5xl" style="font-family: 'Epilogue', sans-serif;">Our Team</h2>
         <p class="text-[#212126] text-base p-3 lg:text-xl xl:text-2xl xl:px-4" style="font-family: 'Roboto', sans-serif;">Umecorn was founded and built by a team of industry experts in Recruitment, HR, Big Data, AI, Psychometrics and Technology. We are a team that is committed to unlocking the potential in people that traditional methods cannot do. We believe in the power of perception and community.</p>
     </div>
@@ -266,7 +266,7 @@
                 <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
                 <p class="text-[#606066] text-sm lg:text-lg" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
+                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-lg lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and </p>
                 <button class="text-[#2F45FF] text-sm underline font-normal" onclick="toggleInfo('info1')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info1" class="hidden text-left mt-4 text-[#212126]" style="font-family: 'Roboto', sans-serif;">
                     <p>A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.</p>
@@ -386,27 +386,27 @@
         <form class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <div class="pb-6 md:pb-0">
             <label for="full-name" class="block text-sm font-normal #45454D md:pb-1">Full Name <span class="text-red-500">*</span></label>
-            <input type="text" id="full-name" placeholder="Enter full name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+            <input type="text" id="full-name" required placeholder="Enter full name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
           </div>
       
           <div class="pb-6 md:pb-0">
             <label for="company" class="block text-sm font-normal #45454D md:pb-1">Company <span class="text-red-500">*</span></label>
-            <input type="text" id="company" placeholder="Enter your company name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+            <input type="text" id="company" required placeholder="Enter your company name" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
           </div>
       
           <div class="pb-6 md:pb-0">
             <label for="email" class="block text-sm font-normal #45454D md:pb-1">Business Email Address <span class="text-red-500">*</span></label>
-            <input type="email" id="email" placeholder="Enter business email address" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+            <input type="email" id="email" required placeholder="Enter business email address" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
           </div>
       
           <div class="pb-6 md:pb-0">
             <label for="phone" class="block text-sm font-normal #45454D md:pb-1">Phone Number <span class="text-red-500">*</span></label>
-            <input type="tel" id="phone" placeholder="Enter phone number" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
+            <input type="tel" id="phone" required placeholder="Enter phone number" class="mt-1 block w-full h-[48px] md:h-[56px] px-4 py-3 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA]">
           </div>
       
           <div class="md:col-span-2 relative pb-4 md:pb-2">
             <label for="message" class="block text-sm font-normal #45454D md:pb-1">Message <span class="text-red-500">*</span></label>
-            <textarea id="message" placeholder="Write your message here ..." rows="5" class="mt-1 block w-full h-[136px] py-2 px-4 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA] resize-none" style="border-radius: 10px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);"></textarea>
+            <textarea id="message" required placeholder="Write your message here ..." rows="5" class="mt-1 block w-full h-[136px] py-2 px-4 border border-[#E4E4E5] rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base placeholder-[#CCCACA] resize-none" style="border-radius: 10px; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);"></textarea>
             <div class="absolute bottom-3.5 right-0 w-6 h-6 md:bottom-1.5 md:right-0">
                 <img src="/assets/text area.png" alt="Three angular lines" class="w-5 h-5 mx-auto">
               </div>
@@ -414,15 +414,14 @@
           </div>
       
           <div class="pb-0 md:col-span-2 flex justify-center" style="font-family: 'Epilogue', sans-serif;">
-            <button type="submit" class="w-full h-[48px] md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#B3CCFF] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <button id="submitBtn" type="submit" class="w-full h-[48px] md:w-[152px] lg:w-[224px] lg:h-[56px] inline-flex justify-center py-3 px-6 lg:items-center border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-[#B3CCFF] focus:outline-none" disabled>
               Submit
             </button>
           </div>
         </form>
       </div>
-      
-      
 </section>
+
 
   
   <!-- Responsive Footer Section -->

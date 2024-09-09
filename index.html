@@ -54,7 +54,7 @@
 
     <!-- Get Started Button for sm and md screens, positioned at the bottom -->
     <div class="mt-auto flex justify-center text-center items-center pb-6 sm:pb-8 md:pb-10 w-full" style="font-family: 'Epilogue', sans-serif;">
-        <a href="#" class="bg-blue-600 text-white py-3 px-20 rounded-lg text-center text-sm">
+        <a href="#" class="bg-[#2F45FF] text-white py-3 px-20 rounded-lg text-center text-sm">
             Get Started
         </a>
     </div>
@@ -126,101 +126,226 @@
 </section>
 
 
+
+
+
+<!--for lg, xl or more big screens-->
 <!-- "How can Umecorn help you?" Section -->
-<section class="py-8 md:py-12 lg:py-20 bg-white">
+<section class="lg:py-20 bg-white hidden lg:block">
     <div class="container mx-auto px-3">
-        <h2 class="text-[#00000A] font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-center mb-3 lg:mb-6 2xl:font-extrabold" style="font-family: 'Epilogue', sans-serif;">
+        <h2 class="text-[#00000A] font-bold lg:text-4xl 2xl:text-5xl text-center lg:mb-6 2xl:font-extrabold" style="font-family: 'Epilogue', sans-serif;">
             How can Umecorn help you?
         </h2>
-        <p class="text-center text-[#212126] mb-4 md:text-lg md:px-8 lg:mb-6 lg:text-xl 2xl:text-2xl lg:px-28 2xl:px-60" style="font-family: 'Roboto', sans-serif;">
+        <p class="text-center text-[#212126] lg:mb-6 lg:text-xl 2xl:text-2xl lg:px-28 2xl:px-60" style="font-family: 'Roboto', sans-serif;">
             Explore tailored solutions for employers, recruiters, and financial institutions; and unlock your Social Score.
         </p>
-        <div class="grid grid-cols-12 gap-3 md:gap-6 lg:gap-5 2xl:gap-8 md:px-8 2xl:px-0">
+        <div class="grid grid-cols-12 lg:gap-5 2xl:gap-8 2xl:px-0">
             <!-- First Column with the larger image on laptops (60%) -->
             <div class="col-span-12 shadow-sm lg:col-span-7 bg-white rounded-lg relative group">
                 <img src="/assets/help image 1.png" alt="Umecorn for Employers" 
-                class="w-full h-auto object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[100%] sm:h-auto md:h-[308px]">
+                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg">
 
-                <!-- Text for small and medium screens -->
-                <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
-                    <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
-                    <p class="text-[#212126] mb-2 lg:hidden md:text-lg md:mb-4" style="font-family: 'Roboto', sans-serif;">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
-                    <a href="#" class="underline text-blue-500 hover:text-white font-normal md:text-lg lg:hidden" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
-                </div>
+                <!-- Hover text overlay -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
+                    <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
+                        <!-- Title always visible but lower down -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
 
-                <!-- Text overlay for large screens -->
-                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
-                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
-                    <p class="text-white mb-4 hidden lg:block" style="font-family: 'Roboto', sans-serif;">Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
+                        <!-- Description hidden initially and slides up on hover -->
+                        <p class="lg:mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
+                            Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.
+                        </p>
+
+                        <a href="#" class="text-blue-400 hover:text-white font-semibold underline lg:group-hover:text-white lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10 lg:transition lg:duration-500" style="font-family: 'Roboto', sans-serif;">
+                            Register Now <span class="no-underline">&rarr;</span>
+                        </a>
+                        
+                    </div>
                 </div>
             </div>
 
             <!-- Second Column (40%) -->
             <div class="col-span-12 lg:col-span-5 bg-white rounded-lg relative group">
                 <img src="/assets/help image 2.png" alt="Umecorn for Recruitment" 
-                class="w-full h-auto object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[100%] sm:h-auto md:h-[308px]">
+                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg">
                                       
-                <!-- Text for small and medium screens -->
-                <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
-                    <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
-                    <p class="text-[#212126] mb-2 lg:hidden md:text-lg md:mb-4" style="font-family: 'Roboto', sans-serif;">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
-                    <a href="#" class="underline text-blue-500 hover:text-blue-700 font-normal md:text-lg lg:hidden" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
-                </div>
+                 <!-- Hover text overlay -->
+                 <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
+                    <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
+                        <!-- Title always visible but lower down -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
 
-                <!-- Text overlay for large screens -->
-                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
-                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
-                    <p class="text-white mb-4 hidden lg:block" style="font-family: 'Roboto', sans-serif;">Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
+                        <!-- Description hidden initially and slides up on hover -->
+                        <p class="lg:mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
+                            Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.
+                        </p>
+
+                        <a href="#" class="text-blue-400 hover:text-white font-semibold underline lg:group-hover:text-white lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10 lg:transition lg:duration-500" style="font-family: 'Roboto', sans-serif;">
+                            Register Now <span class="no-underline">&rarr;</span>
+                        </a>
+                        
+                    </div>
                 </div>
             </div>
 
             <!-- Third Column (40%) -->
             <div class="col-span-12 lg:col-span-5 bg-white rounded-lg relative group">
                 <img src="/assets/help image 3.png" alt="Umecorn for Financial Institutions" 
-                class="w-full h-auto object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[100%] sm:h-auto md:h-[308px]">
+                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg">
        
-                <!-- Text for small and medium screens -->
-                <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
-                    <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
-                    <p class="text-[#212126] mb-2 lg:hidden md:text-lg md:mb-4" style="font-family: 'Roboto', sans-serif;">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
-                    <a href="#" class="underline text-blue-500 hover:text-blue-700 font-normal md:text-lg lg:hidden" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
-                </div>
+                <!-- Hover text overlay -->
+                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
+                    <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
+                        <!-- Title always visible but lower down -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
 
-                <!-- Text overlay for large screens -->
-                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
-                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
-                    <p class="text-white mb-4 hidden lg:block" style="font-family: 'Roboto', sans-serif;">Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
+                        <!-- Description hidden initially and slides up on hover -->
+                        <p class="mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
+                            Do you want to truly understand the intention and risk of new potential customers. Register your organisation here and revolutionise the way you underwrite.                        
+                        </p>
+
+                        <a href="#" class="text-blue-400 hover:text-white font-semibold underline lg:group-hover:text-white lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10 lg:transition lg:duration-500" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Fourth Column with the larger image on laptops (60%) -->
             <div class="col-span-12 lg:col-span-7 bg-white rounded-lg relative group">
                 <img src="/assets/help image 4.png" alt="Umecorn for Individuals" 
-                class="w-full h-auto object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg md:w-[100%] sm:h-auto md:h-[308px]">
+                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg">
                         
-                <!-- Text for small and medium screens -->
-                <div class="shadow px-3 pb-3 rounded-lg lg:hidden md:px-6 md:py-3 md:pb-5">
-                    <h3 class="text-xl text-[#212126] font-bold mb-2 lg:hidden md:text-2xl" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
-                    <p class="text-[#212126] mb-2 lg:hidden md:text-lg md:mb-4" style="font-family: 'Roboto', sans-serif;">
-                        Want to know your Umecorn Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecorn members and enhance your own reliability scores.
-                    </p>
-                    <a href="#" class="underline text-blue-500 hover:text-blue-700 font-normal md:text-lg lg:hidden" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
-                </div>
-                <!-- Text overlay for large screens -->
-                <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:bg-black lg:bg-opacity-50 lg:p-6 lg:rounded-lg lg:opacity-0 lg:group-hover:opacity-100 transition-opacity">
-                    <h3 class="text-xl font-semibold mb-2 text-white hidden lg:block" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
-                    <p class="text-white mb-4 hidden lg:block" style="font-family: 'Roboto', sans-serif;">
-                        Want to know your Umecorn Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecorn members and enhance your own reliability scores.
-                    </p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold hidden lg:block" style="font-family: 'Roboto', sans-serif;">Register Now &rarr;</a>
+                 <!-- Hover text overlay -->
+                 <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
+                    <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
+                        <!-- Title always visible but lower down -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
+
+                        <!-- Description hidden initially and slides up on hover -->
+                        <p class="mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
+                            Want to know your Umecorn Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecorn members and enhance your own reliability scores.
+                        </p>
+
+                        <a href="#" class="text-blue-400 hover:text-white font-semibold underline lg:group-hover:text-white lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10 lg:transition lg:duration-500" style="font-family: 'Roboto', sans-serif;">
+                            Register Now <span class="no-underline">&rarr;</span>
+                        </a>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
+<!--for sm and md screen-->
+<!-- "How can Umecorn help you?" Section -->
+<section class="py-8 md:py-12 bg-white lg:hidden">
+    <div class="container mx-auto px-3">
+        <h2 class="text-[#00000A] font-bold text-2xl md:text-3xl text-center mb-3" style="font-family: 'Epilogue', sans-serif;">
+            How can Umecorn help you?
+        </h2>
+        <p class="text-center text-[#212126] mb-4 md:text-lg md:px-8" style="font-family: 'Roboto', sans-serif;">
+            Explore tailored solutions for employers, recruiters, and financial institutions; and unlock your Social Score.
+        </p>
+        <div class="grid grid-cols-12 gap-3 md:gap-6 md:px-8">
+            <!-- First Column-->
+            <div class="col-span-12 lg:col-span-7 bg-white relative group">                        
+                <div class="shadow rounded-b-xl pb-3 md:pb-5">
+    
+                    <img src="/assets/help image 1.png" alt="Umecorn for Individuals" 
+                        class="w-screen h-auto object-cover rounded-t-xl md:h-[308px]">
+                    
+                    <h3 class="px-3 pt-3 md:px-6 md:pt-6 text-xl text-[#212126] font-bold md:text-2xl" style="font-family: 'Epilogue', sans-serif;">
+                        Umecorn for Employers
+                    </h3>
+
+                    <p class="text-[#212126] font-normal px-3 md:px-6 pt-2 md:pt-4 md:text-lg pb-3 md:pb-4" style="font-family: 'Roboto', sans-serif;">
+                        Do you want a deeper and more transparent understanding of what is happening in your workplace? Register your organisation here and unlock the true dynamics and potential of your workforce.
+                    </p>
+                    
+                    <a href="#" class="px-3 md:px-6 underline text-[#2F45FF] font-normal md:text-lg" style="font-family: 'Roboto', sans-serif; text-decoration: underline;">
+                        Register Now <span class="no-underline">&rarr;</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-span-12 lg:col-span-7 bg-white relative group">                        
+                <div class="shadow rounded-b-xl pb-3 md:pb-5">
+    
+                    <img src="/assets/help image 2.png" alt="Umecorn for Individuals" 
+                        class="w-screen h-auto object-cover rounded-t-xl md:h-[308px]">
+                    
+                    <h3 class="px-3 pt-3 md:px-6 md:pt-6 text-xl text-[#212126] font-bold md:text-2xl" style="font-family: 'Epilogue', sans-serif;">
+                        Umecorn for Recruitment
+                    </h3>
+
+                    <p class="text-[#212126] font-normal px-3 md:px-6 pt-2 md:pt-4 md:text-lg pb-3 md:pb-4" style="font-family: 'Roboto', sans-serif;">
+                        Do you want to make better hires? Do you want to optimise the process and save time? Register your organisation here and revolutionise the way you recruit.
+                    </p>
+
+                    <a href="#" class="px-3 md:px-6 underline text-[#2F45FF] font-normal md:text-lg" style="font-family: 'Roboto', sans-serif; text-decoration: underline;">
+                        Register Now <span class="no-underline">&rarr;</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+
+            <!-- Third Column -->
+            <div class="col-span-12 lg:col-span-7 bg-white relative group">                        
+                <div class="shadow rounded-b-xl pb-3 md:pb-5">
+    
+                    <img src="/assets/help image 3.png" alt="Umecorn for Individuals" 
+                        class="w-screen h-auto object-cover rounded-t-xl md:h-[308px]">
+                    
+                    <h3 class="px-3 pt-3 md:px-6 md:pt-6 text-xl text-[#212126] font-bold md:text-2xl" style="font-family: 'Epilogue', sans-serif;">
+                        Umecorn for Financial Institutions
+                    </h3>
+                    
+                    <p class="text-[#212126] font-normal px-3 md:px-6 pt-2 md:pt-4 md:text-lg pb-3 md:pb-4" style="font-family: 'Roboto', sans-serif;">
+                        Do you want to truly understand the intention and risk of new potential customers? Register your organisation here and revolutionise the way you underwrite.
+                    </p>
+    
+                    <a href="#" class="px-3 md:px-6 underline text-[#2F45FF] font-normal md:text-lg" style="font-family: 'Roboto', sans-serif; text-decoration: underline;">
+                        Register Now <span class="no-underline">&rarr;</span>
+                    </a>
+
+                </div>
+            </div>
+
+
+           <!-- Fourth Column -->
+            <div class="col-span-12 lg:col-span-7 bg-white relative group">                        
+                <div class="shadow rounded-b-xl pb-3 md:pb-5">
+
+                    <img src="/assets/help image 4.png" alt="Umecorn for Individuals" 
+                        class="w-screen h-auto object-cover rounded-t-xl md:h-[308px]">
+                    
+                    <h3 class="px-3 pt-3 md:px-6 md:pt-6 text-xl text-[#212126] font-bold md:text-2xl" style="font-family: 'Epilogue', sans-serif;">
+                        Umecorn for Individuals
+                    </h3>
+                    
+                    <p class="text-[#212126] font-normal px-3 md:px-6 pt-2 md:pt-4 md:text-lg pb-3 md:pb-4" style="font-family: 'Roboto', sans-serif;">
+                        Want to know your Umecorn Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecorn members and enhance your own reliability scores.
+                    </p>
+
+                    <a href="#" class="px-3 md:px-6 underline text-[#2F45FF] font-normal md:text-lg" style="font-family: 'Roboto', sans-serif; text-decoration: underline;">
+                        Register Now <span class="no-underline">&rarr;</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 
 
 <!-- Umecorn Incentive Section -->
@@ -250,22 +375,24 @@
     </div>
 </section>
 
+
+
 <!-- Our Team Section -->
-<section id="team" class="pt-8 pb-12 bg-white text-center md:px-10 md:py-12 md:pb-16 lg:pt-16 xl:pt-28 2xl:px-[12rem]">
+<section id="team" class="pt-8 pb-12 bg-white text-center px-4 md:px-10 md:py-12 md:pb-16 lg:pt-16 xl:pt-28 2xl:px-[12rem]">
        <!-- Section Header -->
     <div class="max-w-3xl 2xl:max-w-5xl mx-auto text-center mb-6 lg:mb-8">
         <h2 class="text-[#00000A] font-bold 2xl:font-extrabold text-2xl mb-1 md:text-3xl lg:text-4xl 2xl:text-5xl" style="font-family: 'Epilogue', sans-serif;">Our Team</h2>
-        <p class="text-[#212126] text-base p-3 lg:text-xl 2xl:text-2xl 2xl:px-4" style="font-family: 'Roboto', sans-serif;">Umecorn was founded and built by a team of industry experts in Recruitment, HR, Big Data, AI, Psychometrics and Technology. We are a team that is committed to unlocking the potential in people that traditional methods cannot do. We believe in the power of perception and community.</p>
+        <p class="text-[#212126] text-base pt-3 lg:text-xl 2xl:text-2xl" style="font-family: 'Roboto', sans-serif;">Umecorn was founded and built by a team of industry experts in Recruitment, HR, Big Data, AI, Psychometrics and Technology. We are a team that is committed to unlocking the potential in people that traditional methods cannot do. We believe in the power of perception and community.</p>
     </div>
 
     <!-- Team Members -->
-    <div class="max-w-full mx-auto gap-11 grid grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4">
+    <div class="max-w-full mx-auto gap-8 md:gap:10 lg:gap-11 xl:gap-12 2xl:gap-14 grid grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4">
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and </p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info1')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info1" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.</p>
@@ -274,24 +401,24 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Anowar Hossain</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Co-Founder and Chief Technology Officer</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info2')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info2" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
                 </div>
-        </div>
+            </div>
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/lan.png" alt="Ian Feeney" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Ian Feeney</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Co-Founder and CEO Umecorn Career</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info3')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info3" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unparalleled expertise. Most recently, he served as the Director of Talent Acquisition for EMEA at the global IT leader, Dell Technologies, where he spearheaded the integration of cutting-edge HR solutions that transformed the organisation's recruitment capabilities.
@@ -302,11 +429,11 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/kumar.png" alt="Prashant Kumar" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Prashant Kumar</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Data and Strategy Officer</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info4')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info4" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts and directions for our portfolio. In addition, he is currently serving as advisor to a few deep tech start-ups and scales in the domain of AI/ML, cloud infrastructure and scaled customer applications. Previously, he was CTO and a co-founder of Cardinality Limited where he successfully led the product portfolio, strategy and direction of the organisation and raising multiple rounds of funding. He was pivotal in convincing some of the Tier-1 operators on the Cardinality platform and delivered some of the first and biggest big data solutions harnessing the power of billions of events everyday.
@@ -316,11 +443,11 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dr of Psychometrics</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Psychometrics Officer</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info5')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info5" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
@@ -329,11 +456,11 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Faisal Mohammad</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Head of Engineering</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info6')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info6" class="hidden text-left mt-4 text-[#212126]text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>A computer science graduate and specialist in architecting technical platforms, overseeing development projects, team management, infrastructure builds and UI/UX design across industries such as financial services, logistics, e-commerce, retail, and healthcare. He has over 14 years of  technical development and leadership expertise across Europe, the Middle East, and Asia.
@@ -343,11 +470,11 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/dawn.png" alt="Dawn Coulter" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dawn Coulter</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Marketing Officer</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
                 <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info7')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info7" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>A brand expert with 25 years, experience in brand strategy, communications, positioning and re-positioning. Former Global Head of Strategy with McCann Erickson Worldwide.. Dawn has worked with international brands, including Smythson; Hackett; Sergio Rossi; Credit Suisse; Gucci Group; M&S  Pepe Jeans London; Unilever Ice Cream and Frozen Food; Forte Hotels.</p>
@@ -356,11 +483,11 @@
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
-            <div class="rounded-2xl p-4 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
+            <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'epi', sans-serif;">Justin Inniss</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Commercial Officer</p>
-                <p class="text-[#212126] px-4 py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
+                <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
                 <button class="text-[#2F45FF] text-sm underline font-normal lg:text-base font-normal" onclick="toggleInfo('info8')" style="font-family: 'Roboto', sans-serif;">Read more</button>
                 <div id="info8" class="hidden text-left mt-4 text-[#212126] text-base lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
                     <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
@@ -370,8 +497,10 @@
     </div>
 </section>
 
+
+
 <!-- Contact Us Section -->
-<section id="contact" class="flex flex-col items-center justify-center bg-[#0A0B5C] px-3 pt-8 pb-8 md:pt-14 md:pb-14 lg:pt-[72px]">
+<section id="contact" class="flex flex-col items-center justify-center bg-[#0A0B5C] px-3 pt-8 pb-8 md:pt-14 md:pb-14 lg:pt-[72px] 2xl:pb-[5.5rem]">
     <h2 class="text-2xl font-bold text-center text-white mb-3 lg:mb-8 md:text-3xl lg:text-4xl 2xl:text-5xl" style="font-family: 'Epilogue', sans-serif;">Contact Us</h2>
     <p class="text-center text-white mb-4 font-normal md:text-lg lg:text-xl md:px-10 lg:px-32 xl:px-[12rem] 2xl:px-[30rem]" style="font-family: 'Roboto', sans-serif;">
       In order to understand how our unique solution can help your business, please fill in this contact form and we will respond to you as soon as possible.
@@ -381,7 +510,7 @@
     </p>
 
     <!-- Adjust the width for md and lg screens -->
-    <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl bg-white rounded-2xl shadow-lg px-3 md:px-6 pt-4 md:pt-8 pb-3 md:pb-6" style="font-family: 'Roboto', sans-serif;">
+    <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl bg-white rounded-xl lg:rounded-2xl shadow-lg px-3 md:px-6 pt-4 md:pt-8 pb-3 md:pb-6" style="font-family: 'Roboto', sans-serif;">
         <form class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <div class="pb-6 md:pb-0">
             <label for="full-name" class="block text-sm font-normal #45454D md:pb-1">Full Name <span class="text-red-500">*</span></label>

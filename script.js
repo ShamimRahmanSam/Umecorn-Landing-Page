@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             topBtnColor.style.backgroundColor = '#f7f7f7';
 
             if (getStartedBtn) {
-                getStartedBtn.classList.add('bg-blue-600', 'text-white');
+                getStartedBtn.classList.add('bg-[#2F45FF]', 'text-white');
                 getStartedBtn.classList.remove('bg-white', 'text-[#2F45FF]');
             }
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (getStartedBtn) {
                 getStartedBtn.classList.add('bg-white', 'text-[#2F45FF]');
-                getStartedBtn.classList.remove('bg-blue-600', 'text-white');
+                getStartedBtn.classList.remove('bg-[#2F45FF]', 'text-white');
             }
 
             revertHeaderStyles();
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.remove('text-white');
         });
         if (getStartedBtn) {
-            getStartedBtn.classList.add('bg-blue-600', 'text-white');
+            getStartedBtn.classList.add('bg-[#2F45FF]', 'text-white');
             getStartedBtn.classList.remove('bg-white', 'text-[#2F45FF]');
         }
     }
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (getStartedBtn) {
                 getStartedBtn.classList.add('bg-white', 'text-[#2F45FF]');
-                getStartedBtn.classList.remove('bg-blue-600', 'text-white');
+                getStartedBtn.classList.remove('bg-[#2F45FF]', 'text-white');
             }
         }
     }

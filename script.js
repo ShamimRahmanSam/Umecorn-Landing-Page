@@ -1,3 +1,23 @@
+    // Function to open the modal
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+      }
+      
+      // Function to close the modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+      }
+      
+      // To close modal by clicking outside of it
+      window.onclick = function(event) {
+        var modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+          if (event.target == modal) {
+            modal.classList.add('hidden');
+          }
+        });
+      }
+      
 document.addEventListener('DOMContentLoaded', function () {
     const burger = document.getElementById('burger');
     const mobileMenu = document.getElementById('mobileMenu');

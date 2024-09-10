@@ -10,55 +10,54 @@
 </head>
 
 <body class="scroll-smooth bg-white text-black">
-   <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 2xl:py-6 px-3 2xl:px-44 text-white transition-all duration-300">
-    <div class="flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <img id="defaultLogo" src="/assets/Logo-Generic.svg" alt="Logo" class="h-10 transition-all duration-300 lg:h-12 md:px-8">
-            <img id="secondLogo" src="/assets/Logo-Generic-2.svg" alt="Logo" class="h-10 left-[-4px] absolute hidden md:px-8 lg:h-12 2xl:px-48 2xl:left-[0px]">
-        </div>
-
-        <nav id="navLinks" class="hidden lg:flex space-x-16 text-base absolute left-1/2 transform -translate-x-1/2 lg:mt-4" style="font-family: 'Roboto', sans-serif;">
-            <a href="#home" class="nav-link text-white">Home</a>
-            <a href="#cases" class="nav-link text-white">Cases</a>
-            <a href="#team" class="nav-link text-white">Team</a>
-            <a href="#contact" class="nav-link text-white">Contact us</a>
-        </nav>
-
-        <div class="flex items-center space-x-4 md:px-8">
-            <a id="getStartedBtn" href="#" class="hidden bg-white font-bold text-[#2F45FF] py-4 px-4 rounded-lg text-sm md:block" style="font-family: 'Epilogue', sans-serif;">
-                Get Started
-            </a>
-            <div id="topBtnColor" class="relative flex items-center bg-[#2F45FF] rounded-lg p-2 md:p-3 lg:hidden">
-                <button id="burger" class="focus:outline-none">
-                    <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-6">
-                </button>
-                <button id="closeMenu" class="focus:outline-none hidden">
-                    <img src="/assets/close.png" alt="Close Menu" class="w-6 h-6">
-                </button>
+    <header id="mainHeader" class="fixed w-full top-0 left-0 z-50 py-4 md:py-3 lg:py-4 2xl:py-6 px-3 2xl:px-44 text-white transition-all duration-300 border-b border-transparent">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img id="defaultLogo" src="/assets/Logo-Generic.svg" alt="Logo" class="h-10 transition-all duration-300 lg:h-12 md:px-8">
+                <img id="secondLogo" src="/assets/Logo-Generic-2.svg" alt="Logo" class="h-10 absolute hidden md:px-8 lg:h-12 2xl:px-48">
+            </div>
+    
+            <nav id="navLinks" class="hidden lg:flex space-x-16 text-base absolute left-1/2 transform -translate-x-1/2 lg:mt-4" style="font-family: 'Roboto', sans-serif;">
+                <a href="#home" class="nav-link text-white">Home</a>
+                <a href="#cases" class="nav-link text-white">Cases</a>
+                <a href="#team" class="nav-link text-white">Team</a>
+                <a href="#contact" class="nav-link text-white">Contact us</a>
+            </nav>
+    
+            <div class="flex items-center space-x-4 md:px-8">
+                <a id="getStartedBtn" href="#" class="hidden bg-white font-bold text-[#2F45FF] py-4 px-4 rounded-lg text-sm md:block" style="font-family: 'Epilogue', sans-serif;">
+                    Get Started
+                </a>
+                <div id="topBtnColor" class="relative flex items-center bg-[#2F45FF] rounded-lg p-2 md:p-3 lg:hidden">
+                    <button id="burger" class="focus:outline-none">
+                        <img src="/assets/menu.png" alt="Burger Menu" class="w-6 h-6">
+                    </button>
+                    <button id="closeMenu" class="focus:outline-none hidden">
+                        <img src="/assets/close.png" alt="Close Menu" class="w-6 h-6">
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-10 p-3 flex flex-col justify-between h-screen transform translate-y-[-100vh] transition-transform duration-500">
+        <nav class="mt-20">
+            <div class="flex flex-col space-y-4 text-gray-800" style="font-family: 'Roboto', sans-serif;">
+                <a href="#home" class="hover:text-[#212126]">Home</a>
+                <a href="#cases" class="hover:text-[#212126]">Cases</a>
+                <a href="#team" class="hover:text-[#212126]">Team</a>
+                <a href="#contact" class="hover:text-[#212126]">Contact us</a>
+            </div>
+        </nav>
 
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="hidden fixed inset-0 bg-white z-10 p-3 flex flex-col justify-between h-screen">
-    <nav class="mt-20">
-        <div class="flex flex-col space-y-4 text-gray-800" style="font-family: 'Roboto', sans-serif;">
-            <a href="#home" class="hover:text-[#212126]">Home</a>
-            <a href="#cases" class="hover:text-[#212126]">Cases</a>
-            <a href="#team" class="hover:text-[#212126]">Team</a>
-            <a href="#contact" class="hover:text-[#212126]">Contact us</a>
+        <!-- Get Started Button for sm and md screens, positioned at the bottom -->
+        <div class="mt-auto flex justify-center text-center items-center pb-6 sm:pb-8 md:pb-10 w-full" style="font-family: 'Epilogue', sans-serif;">
+            <a href="#" class="bg-[#2F45FF] text-white py-3 px-20 rounded-lg text-center text-sm">
+                Get Started
+            </a>
         </div>
-    </nav>
-
-    <!-- Get Started Button for sm and md screens, positioned at the bottom -->
-    <div class="mt-auto flex justify-center text-center items-center pb-6 sm:pb-8 md:pb-10 w-full" style="font-family: 'Epilogue', sans-serif;">
-        <a href="#" class="bg-[#2F45FF] text-white py-3 px-20 rounded-lg text-center text-sm">
-            Get Started
-        </a>
     </div>
-</div>
 
     
 <!-- Hero Section -->
@@ -128,7 +127,6 @@
 
 
 
-
 <!--for lg, xl or more big screens-->
 <!-- "How can Umecorn help you?" Section -->
 <section class="lg:py-20 bg-white hidden lg:block">
@@ -143,13 +141,13 @@
             <!-- First Column with the larger image on laptops (60%) -->
             <div class="col-span-12 shadow-sm lg:col-span-7 bg-white rounded-lg relative group">
                 <img src="/assets/help image 1.png" alt="Umecorn for Employers" 
-                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg">
+                class="w-full object-cover rounded-t-lg mb-3 lg:h-full lg:rounded-lg mb-3">
 
                 <!-- Hover text overlay -->
                 <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
                     <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
-                        <!-- Title always visible but lower down -->
-                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
+                        <!-- Title with enhanced transition -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2 lg:transition lg:duration-500 lg:ease-in-out" style="font-family: 'Epilogue', sans-serif;">Umecorn for Employers</h3>
 
                         <!-- Description hidden initially and slides up on hover -->
                         <p class="lg:mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
@@ -172,8 +170,8 @@
                  <!-- Hover text overlay -->
                  <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
                     <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
-                        <!-- Title always visible but lower down -->
-                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
+                        <!-- Title with enhanced transition -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2 lg:transition lg:duration-500 lg:ease-in-out" style="font-family: 'Epilogue', sans-serif;">Umecorn for Recruitment</h3>
 
                         <!-- Description hidden initially and slides up on hover -->
                         <p class="lg:mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
@@ -196,8 +194,8 @@
                 <!-- Hover text overlay -->
                 <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
                     <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
-                        <!-- Title always visible but lower down -->
-                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
+                        <!-- Title with enhanced transition -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2 lg:transition lg:duration-500 lg:ease-in-out" style="font-family: 'Epilogue', sans-serif;">Umecorn for Financial Institutions</h3>
 
                         <!-- Description hidden initially and slides up on hover -->
                         <p class="mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
@@ -217,18 +215,17 @@
                  <!-- Hover text overlay -->
                  <div class="lg:absolute lg:inset-0 lg:flex lg:flex-col lg:justify-end lg:rounded-lg lg:transition lg:duration-500 lg:overflow-hidden lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
                     <div class="lg:absolute bottom-0 w-full lg:py-6 lg:px-6 lg:flex lg:flex-col">
-                        <!-- Title always visible but lower down -->
-                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
+                        <!-- Title with enhanced transition -->
+                        <h3 class="lg:text-2xl font-bold text-white lg:mb-[-3rem] lg:group-hover:mb-2 lg:transition lg:duration-500 lg:ease-in-out" style="font-family: 'Epilogue', sans-serif;">Umecorn for Individuals</h3>
 
                         <!-- Description hidden initially and slides up on hover -->
                         <p class="mb-3 text-white lg:max-h-0 lg:opacity-0 lg:transition lg:duration-500 lg:ease-in-out lg:group-hover:max-h-full lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10" style="font-family: 'Roboto', sans-serif;">
-                            Want to know your Umecorn Social Score? Find out how you are truly perceived by others. Understand your strengths and the areas that need some work. Get insights into the type of roles that may be ideal for you based on your character maps. Access exclusive training tools to help you improve your Social Score over time. Also seamlessly offer referrals to other Umecorn members and enhance your own reliability scores.
+                            Do you want to gain more control and insight into your own work environment and performance? Register here and get started with Umecorn.
                         </p>
 
                         <a href="#" class="text-blue-400 hover:text-white font-semibold underline lg:group-hover:text-white lg:group-hover:opacity-100 lg:group-hover:translate-y-0 lg:translate-y-10 lg:transition lg:duration-500" style="font-family: 'Roboto', sans-serif;">
-                            Register Now <span class="no-underline">&rarr;</span>
+                            Register Now &rarr;
                         </a>
-                        
                     </div>
                 </div>
             </div>
@@ -378,7 +375,7 @@
 
 
 <!-- Our Team Section -->
-<section id="team" class="pt-8 pb-12 bg-white text-center px-4 md:px-10 md:py-12 md:pb-16 lg:pt-16 xl:pt-28 2xl:px-[12rem]">
+<section id="team" class="pt-8 pb-12 bg-white text-center px-4 md:px-10 md:py-12 md:pb-16 lg:pt-16 xl:pt-20 2xl:px-[12rem]">
        <!-- Section Header -->
     <div class="max-w-3xl 2xl:max-w-5xl mx-auto text-center mb-6 lg:mb-8">
         <h2 class="text-[#00000A] font-bold 2xl:font-extrabold text-2xl pb-1 md:text-3xl lg:text-4xl 2xl:text-5xl" style="font-family: 'Epilogue', sans-serif;">Our Team</h2>

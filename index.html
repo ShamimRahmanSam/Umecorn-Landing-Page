@@ -385,20 +385,20 @@
         <p class="text-[#212126] text-base pt-3 lg:text-xl 2xl:text-2xl" style="font-family: 'Roboto', sans-serif;">Umecorn was founded and built by a team of industry experts in Recruitment, HR, Big Data, AI, Psychometrics and Technology. We are a team that is committed to unlocking the potential in people that traditional methods cannot do. We believe in the power of perception and community.</p>
     </div>
 
-    <!-- Team Members -->
     <div class="max-w-full mx-auto gap-8 md:gap:10 lg:gap-11 xl:gap-12 2xl:gap-14 grid grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4">
+        <!-- Team Member Card -->
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
             <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/jordan.png" alt="Jordan Taylor" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Jordan Taylor</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Founder and Group CEO</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info1')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info1" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalJordan')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
             </div>
         </div>
+    
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
             <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
@@ -406,10 +406,9 @@
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Anowar Hossain</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Co-Founder and Chief Technology Officer</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info2')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info2" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalAnowar')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>               
             </div>
         </div>
 
@@ -419,12 +418,9 @@
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Ian Feeney</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Co-Founder and CEO Umecorn Career</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unp...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info3')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info3" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unparalleled expertise. Most recently, he served as the Director of Talent Acquisition for EMEA at the global IT leader, Dell Technologies, where he spearheaded the integration of cutting-edge HR solutions that transformed the organisation's recruitment capabilities.
-                        As the global lead for Dell's Innovation Council, Ian pioneered the identification and implementation of transformative talent technologies. His unwavering commitment to data-driven insights and masterful approach to driving organisational change have been instrumental in professionalising recruitment processes, elevating the candidate experience, and ensuring strategic alignment.
-                        Now, Ian draws from his previous entrepreneurial experience in the SaaS domain to channel his energy into developing Umecorn, a game-changing recruitment enablement platform poised to disrupt the talent acquisition and HR technology markets. Recognised as a trusted advisor and driving force within the industry, Ian's deep domain expertise and innovative spirit have solidified his reputation as a leader in this space.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalFeeney')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
             </div>
         </div>
 
@@ -434,24 +430,21 @@
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Prashant Kumar</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Data and Strategy Officer</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info4')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info4" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts and directions for our portfolio. In addition, he is currently serving as advisor to a few deep tech start-ups and scales in the domain of AI/ML, cloud infrastructure and scaled customer applications. Previously, he was CTO and a co-founder of Cardinality Limited where he successfully led the product portfolio, strategy and direction of the organisation and raising multiple rounds of funding. He was pivotal in convincing some of the Tier-1 operators on the Cardinality platform and delivered some of the first and biggest big data solutions harnessing the power of billions of events everyday.
-                        Before founding Cardinality, Prashant spent over a decade working with major telecommunications service providers like Telefonica, Deutsche Telekom, Hutchison (3), and AT&T. During this time, he was the architect of some of the biggest online charging solutions. Whilst working for Telefonica UK he was responsible for the solution architecture of their big data analytics solution; he evaluated potential suppliers and prototyping approaches, architected the solution and assisted in the implementation of one of Europe’s largest Hadoop clusters. Prashant has a Master's degree from London School of Economics, focusing on System Design in Context and a Bachelor's degree in software engineering focusing on designing scalable business data systems and mobile communication protocols.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalKumar')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
             </div>
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
             <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
-                <img src="/assets/dr.png" alt="Dr of Psychometrics" class="ww-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
+                <img src="/assets/dr.png" alt="Dr of Psychometrics" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dr of Psychometrics</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Psychometrics Officer</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info5')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info5" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalDr')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
             </div>
         </div>
 
@@ -461,12 +454,10 @@
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Faisal Mohammad</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Head of Engineering</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A computer science graduate and specialist in architecting technical platforms, overseeing development proje...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info6')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info6" class="hidden text-left mt-4 text-[#212126]text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>A computer science graduate and specialist in architecting technical platforms, overseeing development projects, team management, infrastructure builds and UI/UX design across industries such as financial services, logistics, e-commerce, retail, and healthcare. He has over 14 years of  technical development and leadership expertise across Europe, the Middle East, and Asia.
-                    </p>
-                </div>
-        </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalFaisal')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
+            </div>
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
@@ -475,27 +466,275 @@
                 <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Dawn Coulter</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Marketing Officer</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Gl...</p>
-                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="toggleInfo('info7')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info7" class="hidden text-left mt-4 text-[#212126] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>A brand expert with 25 years, experience in brand strategy, communications, positioning and re-positioning. Former Global Head of Strategy with McCann Erickson Worldwide.. Dawn has worked with international brands, including Smythson; Hackett; Sergio Rossi; Credit Suisse; Gucci Group; M&S  Pepe Jeans London; Unilever Ice Cream and Frozen Food; Forte Hotels.</p>
-                </div>
-        </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalDawn')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
+            </div>
         </div>
 
         <div class="group relative transition-transform duration-300 ease-in-out hover:translate-y-[-0.2rem] bg-white">
             <div class="rounded-2xl p-2 transition-shadow duration-300 ease-in-out group-hover:shadow-[0px_6px_24px_0px_#0000000F]">
                 <img src="/assets/justin.png" alt="Justin Inniss" class="w-28 h-28 mx-auto rounded-full mb-4 lg:w-36 lg:h-36">
-                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'epi', sans-serif;">Justin Inniss</h3>
+                <h3 class="text-[#00000A] font-bold text-xl lg:text-2xl lg:py-2" style="font-family: 'Epilogue', sans-serif;">Justin Inniss</h3>
                 <p class="text-[#606066] text-sm lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">Chief Commercial Officer</p>
                 <p class="text-[#212126] py-2 pb-1 text-sm lg:text-base font-normal lg:py-4" style="font-family: 'Roboto', sans-serif;">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a...</p>
-                <button class="text-[#2F45FF] text-sm underline font-normal lg:text-base font-normal" onclick="toggleInfo('info8')" style="font-family: 'Roboto', sans-serif;">Read more</button>
-                <div id="info8" class="hidden text-left mt-4 text-[#212126] text-base lg:text-base font-normal" style="font-family: 'Roboto', sans-serif;">
-                    <p>A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.</p>
-                </div>
+                <button class="text-[#2F45FF] text-sm underline lg:text-base font-normal" onclick="openModal('modalJustin')" style="font-family: 'Roboto', sans-serif;">
+                    Read more
+                </button>
             </div>
         </div>
     </div>
+
+    
+
+        <!-- Modal (read more button) -->
+
+        <div id="modalJordan" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalJordan')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/jordan.png" alt="Jordan Taylor" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Jordan Taylor</h3>
+                            <p class="text-sm text-gray-600">Founder and Group CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    A systems designer with a deep working knowledge of consumer credit and related systems. He has designed, documented, and built successful loan product platforms including the first fully online car retailer and finance broker in the UK integrated with over 50 lenders and dozens of large UK car dealerships. He is a founder of Baskefy Ltd a multi-lender digital point of sale finance solution and advisor to a Forever 8 Inc, a Nasdaq listed inventory finance business.
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalAnowar" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalAnowar')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/anwar bhai.png" alt="Anowar Hossain" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Anowar Hossain</h3>
+                            <p class="text-sm text-gray-600">Co-Founder and Chief Technology Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    A tech specialist and experienced digital operator, skilled in architecting technical platforms, and developing infrastructure builds across multiple sectors, including financial services, automotive and media. Having completed hundreds of integrations across varied businesses and projects, Anowar is able to clearly define and translate business requirements into robust automated processes to maximize opportunities. He is a founder of DocTime Limited.
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalFeeney" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalFeeney')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/lan.png" alt="Ian Feeney" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Ian Feeney</h3>
+                            <p class="text-sm text-gray-600">Co-Founder and CEO Umecorn Career</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    Ian is a prominent visionary leader in the talent acquisition and HR technology space, bringing over two decades of unparalleled expertise. Most recently, he served as the Director of Talent Acquisition for EMEA at the global IT leader, Dell Technologies, where he spearheaded the integration of cutting-edge HR solutions that transformed the organisation's recruitment capabilities.
+                    As the global lead for Dell's Innovation Council, Ian pioneered the identification and implementation of transformative talent technologies. His unwavering commitment to data-driven insights and masterful approach to driving organisational change have been instrumental in professionalising recruitment processes, elevating the candidate experience, and ensuring strategic alignment.
+                    Now, Ian draws from his previous entrepreneurial experience in the SaaS domain to channel his energy into developing Umecorn, a game-changing recruitment enablement platform poised to disrupt the talent acquisition and HR technology markets. Recognised as a trusted advisor and driving force within the industry, Ian's deep domain expertise and innovative spirit have solidified his reputation as a leader in this space.                
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalKumar" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalKumar')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/kumar.png" alt="Prashant Kumar" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Prashant Kumar</h3>
+                            <p class="text-sm text-gray-600">Chief Data and Strategy Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    Prashant Kumar is the Chief Innovation Officer for Elisa Polystar. In this role, he is responsible for exploring new concepts and directions for our portfolio. In addition, he is currently serving as advisor to a few deep tech start-ups and scales in the domain of AI/ML, cloud infrastructure and scaled customer applications. Previously, he was CTO and a co-founder of Cardinality Limited where he successfully led the product portfolio, strategy and direction of the organisation and raising multiple rounds of funding. He was pivotal in convincing some of the Tier-1 operators on the Cardinality platform and delivered some of the first and biggest big data solutions harnessing the power of billions of events everyday.
+                    Before founding Cardinality, Prashant spent over a decade working with major telecommunications service providers like Telefonica, Deutsche Telekom, Hutchison (3), and AT&T. During this time, he was the architect of some of the biggest online charging solutions. Whilst working for Telefonica UK he was responsible for the solution architecture of their big data analytics solution; he evaluated potential suppliers and prototyping approaches, architected the solution and assisted in the implementation of one of Europe’s largest Hadoop clusters. Prashant has a Master's degree from London School of Economics, focusing on System Design in Context and a Bachelor's degree in software engineering focusing on designing scalable business data systems and mobile communication protocols.                
+                </p>
+            </div>
+        </div>
+
+
+
+        
+        <div id="modalDr" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalDr')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/dr.png" alt="Dr of Psychometrics" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Dr of Psychometrics</h3>
+                            <p class="text-sm text-gray-600">Chief Psychometrics Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.                
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalFaisal" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalFaisal')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/faisal bhai.png" alt="Faisal Mohammad" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Faisal Mohammad</h3>
+                            <p class="text-sm text-gray-600">Head of Engineering</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    A computer science graduate and specialist in architecting technical platforms, overseeing development projects, team management, infrastructure builds and UI/UX design across industries such as financial services, logistics, e-commerce, retail, and healthcare. He has over 14 years of  technical development and leadership expertise across Europe, the Middle East, and Asia.
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalDawn" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalDawn')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/dawn.png" alt="Dawn Coulte" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Dawn Coulte</h3>
+                            <p class="text-sm text-gray-600">Chief Marketing Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    A brand expert with 25 years’ experience in brand strategy, communications, positioning and re-positioning. Former Global Head of Strategy with McCann Erickson Worldwide.. Dawn has worked with international brands, including Smythson; Hackett; Sergio Rossi; Credit Suisse; Gucci Group; M&S  Pepe Jeans London; Unilever Ice Cream and Frozen Food; Forte Hotels.                
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="modalJustin" class="p-4 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg p-4 lg:p-6 max-w-lg w-full sm:w-11/12 sm:h-auto sm:max-w-full mx-auto h-full sm:max-h-screen overflow-y-auto">
+                <button class="text-[#606066] hover:text-gray-700 float-right" onclick="closeModal('modalJustin')">
+                    <img src="/assets/close.png" alt="close" class="w-5 h-5">
+                </button>
+                
+                <!-- Content container: flex-start for small devices, normal for md+ devices -->
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center items-start">
+                    <!-- Image + Name + Role container -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Image -->
+                        <img src="/assets/justin.png" alt="Justin Inniss" class="flex items-start h-16 w-16 md:w-28 md:h-28 rounded-full mb-2 md:mb-0">
+
+                        <!-- Name and Role -->
+                        <div class="md:ml-4 text-left md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold text-black">Justin Inniss</h3>
+                            <p class="text-sm text-gray-600">Chief Commercial Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description: Always flex-start -->
+                <p class="text-start text-[#212126] font-normal mt-4 text-base md:text-lg">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.                
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+
 
 
 
@@ -509,7 +748,6 @@
       You can also email us at <a href="mailto:enquiries@umecorn.com" class="font-normal text-[#85A8FF] md:text-lg">enquiries@umecorn.com</a>
     </p>
 
-    <!-- Adjust the width for md and lg screens -->
     <div class="w-full max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl bg-white rounded-xl lg:rounded-2xl shadow-lg px-3 md:px-6 pt-4 md:pt-8 pb-3 md:pb-6" style="font-family: 'Roboto', sans-serif;">
         <form class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <div class="pb-6 md:pb-0">
@@ -538,7 +776,6 @@
             <div class="absolute bottom-3.5 right-0 w-6 h-6 md:bottom-1.5 md:right-0">
                 <img src="/assets/text area.png" alt="Three angular lines" class="w-5 h-5 mx-auto">
               </div>
-              
           </div>
       
           <div class="pb-0 md:col-span-2 flex justify-center" style="font-family: 'Epilogue', sans-serif;">

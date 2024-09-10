@@ -1,23 +1,3 @@
-    // Function to open the modal
-    function openModal(modalId) {
-        document.getElementById(modalId).classList.remove('hidden');
-      }
-      
-      // Function to close the modal
-      function closeModal(modalId) {
-        document.getElementById(modalId).classList.add('hidden');
-      }
-      
-      // To close modal by clicking outside of it
-      window.onclick = function(event) {
-        var modals = document.querySelectorAll('.modal');
-        modals.forEach(modal => {
-          if (event.target == modal) {
-            modal.classList.add('hidden');
-          }
-        });
-      }
-      
 document.addEventListener('DOMContentLoaded', function () {
     const burger = document.getElementById('burger');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -186,3 +166,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
 });
+
+
+// Popup modal functions for team members
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('hidden');  // Show modal
+    document.body.classList.add('overflow-hidden'); // Disable background scroll
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('hidden');  // Hide modal
+    document.body.classList.remove('overflow-hidden'); // Enable background scroll
+}

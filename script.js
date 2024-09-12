@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (burger) {
         burger.addEventListener('click', function () {
             mobileMenu.classList.remove('hidden');
-            mobileMenu.classList.add('translate-y-0'); // Slide down menu
+            mobileMenu.classList.add('translate-y-0');
             burger.classList.add('hidden');
             closeMenu.classList.remove('hidden');
             defaultLogo.classList.add('hidden');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             header.classList.add('border-b', 'border-gray-300', 'header-with-bottom-border');
-            header.style.borderBottom = '1px solid #E4E4E5'; // Ensure border for small devices when burger is opened
+            header.style.borderBottom = '1px solid #E4E4E5';
         });
     }
 
@@ -71,11 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (closeMenu) {
         closeMenu.addEventListener('click', function () {
             mobileMenu.classList.remove('translate-y-0');
-            mobileMenu.classList.add('hidden', 'translate-y-[-100vh]'); // Slide up menu
+            mobileMenu.classList.add('hidden', 'translate-y-[-100vh]'); 
             closeMenu.classList.add('hidden');
             burger.classList.remove('hidden');
 
-            // Ensure the second logo is shown when not on the home section
             if (window.location.hash !== '#home' && window.scrollY === 0) {
                 secondLogo.classList.remove('hidden');
                 defaultLogo.classList.add('hidden');
@@ -83,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             topBtnColor.style.backgroundColor = '#2F45FF';
             header.classList.remove('border-b', 'border-gray-300', 'header-with-bottom-border');
-            header.style.borderBottom = 'none'; // Remove border after closing burger menu
-            revertHeaderStyles(); // Call to revert styles when the menu is closed
+            header.style.borderBottom = 'none'; 
+            revertHeaderStyles(); 
         });
     }
 
@@ -94,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('#mobileMenu a').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('translate-y-0');
-            mobileMenu.classList.add('hidden', 'translate-y-[-100vh]'); // Slide up
+            mobileMenu.classList.add('hidden', 'translate-y-[-100vh]'); 
             closeMenu.classList.add('hidden');
             burger.classList.remove('hidden');
             
@@ -191,15 +190,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 // Popup modal functions for team members
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
-    modal.classList.remove('hidden');  // Show modal
-    document.body.classList.add('overflow-hidden'); // Disable background scroll
+    modal.classList.remove('hidden'); 
+    document.body.classList.add('overflow-hidden');
 }
 
 function closeModal(modalId) {
     const modal = document.getElementById(modalId);
-    modal.classList.add('hidden');  // Hide modal
-    document.body.classList.remove('overflow-hidden'); // Enable background scroll
+    modal.classList.add('hidden');  
+    document.body.classList.remove('overflow-hidden');
 }

@@ -9,44 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const getStartedBtn = document.getElementById('getStartedBtn');
     const topBtnColor = document.getElementById('topBtnColor');
     const submitBtn = document.querySelector('button[type="submit"]');
-    
-    // Form fields in the contact form
-    const formFields = [
-        document.getElementById('full-name'),
-        document.getElementById('company'),
-        document.getElementById('email'),
-        document.getElementById('phone'),
-        document.getElementById('message')
-    ];
 
-    // Form validation
-    formFields.forEach(field => {
-        field.addEventListener('input', validateForm);
-    });
-
-    function validateForm() {
-        const allFieldsFilled = formFields.every(field => field.value.trim() !== '');
-
-        if (allFieldsFilled) {
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('bg-[#B3CCFF]');
-            submitBtn.classList.add('bg-blue-500'); // Enable submit button and change color
-        } else {
-            submitBtn.disabled = true;
-            submitBtn.classList.remove('bg-blue-500');
-            submitBtn.classList.add('bg-[#B3CCFF]'); // Disable submit button and reset color
-        }
-    }
-
-    // Prevent form submission for custom actions
-    if (submitBtn) {
-        submitBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            console.log('Form submission prevented');
-        });
-    }
-
-    // Burger menu open functionality
     if (burger) {
         burger.addEventListener('click', function () {
             mobileMenu.classList.remove('hidden');
@@ -67,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Burger menu close functionality
     if (closeMenu) {
         closeMenu.addEventListener('click', function () {
             mobileMenu.classList.remove('translate-y-0');
@@ -87,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
-
-    // Close mobile menu when clicking on links (with the second logo shown for non-home sections)
     document.querySelectorAll('#mobileMenu a').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('translate-y-0');
@@ -97,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             closeMenu.classList.add('hidden');
             burger.classList.remove('hidden');
             
-            // Ensure the second logo is shown when not on the home section
             const targetHash = link.getAttribute('href');
             if (targetHash !== '#home') {
                 secondLogo.classList.remove('hidden');
@@ -185,6 +143,32 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetElement = document.querySelector(hash);
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    const formFields = [
+        document.getElementById('full-name'),
+        document.getElementById('company'),
+        document.getElementById('email'),
+        document.getElementById('phone'),
+        document.getElementById('message')
+    ];
+
+    formFields.forEach(field => {
+        field.addEventListener('input', validateForm);
+    });
+
+    function validateForm() {
+        const allFieldsFilled = formFields.every(field => field.value.trim() !== '');
+
+        if (allFieldsFilled) {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('bg-[#B3CCFF]');
+            submitBtn.classList.add('bg-blue-500'); 
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.classList.remove('bg-blue-500');
+            submitBtn.classList.add('bg-[#B3CCFF]'); 
         }
     }
 });

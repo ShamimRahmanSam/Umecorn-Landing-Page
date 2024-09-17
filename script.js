@@ -43,9 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.location.hash !== '#home' && window.scrollY === 0) {
                 secondLogo.classList.remove('hidden');
                 defaultLogo.classList.add('hidden');
+                topBtnColor.style.backgroundColor = '#2F45FF';
             }
-
-            topBtnColor.style.backgroundColor = '#2F45FF';
+            else{
+                topBtnColor.style.backgroundColor = '#f7f7f7';
+            }
+            
             header.classList.remove('border-b', 'border-gray-300', 'header-with-bottom-border');
             header.style.borderBottom = 'none'; 
 
@@ -66,14 +69,19 @@ document.addEventListener('DOMContentLoaded', function () {
             if (targetHash !== '#home') {
                 secondLogo.classList.remove('hidden');
                 defaultLogo.classList.add('hidden');
+                topBtnColor.style.backgroundColor = '#2F45FF';
             }
 
-            topBtnColor.style.backgroundColor = '#2F45FF';
+            else{
+                topBtnColor.style.backgroundColor = '#f7f7f7';
+            }
 
             if (getStartedBtn) {
                 getStartedBtn.classList.add('bg-white', 'text-[#2F45FF]');
                 getStartedBtn.classList.remove('bg-[#2F45FF]', 'text-white');
             }
+
+            document.body.classList.remove('overflow-hidden');
 
             revertHeaderStyles();
         });
@@ -116,14 +124,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    
-    
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 0) {
-            applyWhiteHeaderStyles();
-        } else {
-            revertHeaderStyles();
+        console.log('Scroll event triggered');
+        if (burger) {
+            console.log('Burger element exists');
+            if (window.scrollY > 0) {
+                applyWhiteHeaderStyles();
+
+                if (window.innerWidth <= 1024) {
+                    console.log('Changing burger icon to menu-2.svg');
+                    burger.querySelector('img').src = '/assets/menu-2.svg';
+                    topBtnColor.style.backgroundColor = '#f7f7f7'; // Change background color when scrolling
+                }
+            } else {
+                revertHeaderStyles();
+
+                if (window.innerWidth <= 1024) {
+                    console.log('Reverting burger icon to menu.svg');
+                    burger.querySelector('img').src = '/assets/menu.svg';
+                    topBtnColor.style.backgroundColor = '#2F45FF'; // Revert to default background color when at the top
+                }
+            }
         }
     });
 

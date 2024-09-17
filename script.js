@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             header.style.borderBottom = '1px solid #E4E4E5';
         });
     }
+    
 
     if (closeMenu) {
         closeMenu.addEventListener('click', function () {
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // Change header styles when scrolling
+  
     function applyWhiteHeaderStyles() {
         header.classList.add('bg-white', 'text-black', 'header-with-bottom-border');
         defaultLogo.classList.add('hidden');
@@ -89,13 +90,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Revert header styles based on screen size and scroll
+   
+
     function revertHeaderStyles() {
         const isAtTop = window.scrollY === 0;
 
         if (isAtTop) {
             header.classList.remove('bg-white', 'text-black', 'header-with-bottom-border');
-            header.style.borderBottom = 'none'; // Remove header border in all cases when at the top
+            header.style.borderBottom = 'none'; 
             defaultLogo.classList.remove('hidden');
             secondLogo.classList.add('hidden');
             navLinks.forEach(link => {
@@ -112,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-    // Handle header changes on scroll
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
             applyWhiteHeaderStyles();
@@ -121,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Smooth scrolling for anchor links
+
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -137,7 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Handle hash in URL for smooth scrolling
+
+
     if (window.location.hash) {
         const hash = window.location.hash;
         const targetElement = document.querySelector(hash);
@@ -175,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Popup modal functions for team members
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.classList.remove('hidden'); 

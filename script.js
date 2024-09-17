@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const topBtnColor = document.getElementById('topBtnColor');
     const submitBtn = document.querySelector('button[type="submit"]');
 
+
     if (burger) {
         burger.addEventListener('click', function () {
             mobileMenu.classList.remove('hidden');
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             header.style.borderBottom = '1px solid #E4E4E5';
         });
     }
-    
+
 
     if (closeMenu) {
         closeMenu.addEventListener('click', function () {

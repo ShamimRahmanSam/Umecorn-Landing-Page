@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             header.classList.add('border-b', 'border-gray-300', 'header-with-bottom-border');
             header.style.borderBottom = '1px solid #E4E4E5';
+            document.body.classList.add('overflow-hidden');
         });
     }
 
@@ -47,7 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
             topBtnColor.style.backgroundColor = '#2F45FF';
             header.classList.remove('border-b', 'border-gray-300', 'header-with-bottom-border');
             header.style.borderBottom = 'none'; 
+
             revertHeaderStyles(); 
+
+            document.body.classList.remove('overflow-hidden');
         });
     }
 
